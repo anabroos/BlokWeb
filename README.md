@@ -40,24 +40,23 @@ Dat betekent dat ik mijn website goed wil laten werken van kleine telefoons tot 
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-Ik ga twee pagina’s van de **HEMA** website namaken.  
-**Originele website:** [https://www.hema.nl](https://www.hema.nl)
+Ik ga twee pagina’s van de **Jellycat** website namaken.  
+**Originele website:** [https://www.jellycat.com](https://www.jellycat.com)
 
 Ik kies voor:  
-1. **Homepage** – met hero, productcategorieën en aanbiedingen.  
-2. **HEMA Extra / Klantenkaart-pagina** – met tekst, iconen en aanmeldformulier.
+1. **Homepage** – met hero, categorieën en promobanners.  
+2. **Productpagina – Bashful Bunny with Christmas Tree** – met foto, prijs, beschrijving en Call To Action knop.  
 
-De HEMA-site is herkenbaar, kleurrijk en gestructureerd.  
-Ik kan hiermee goed oefenen met HTML-semantiek, responsive layout, en een kleine micro-interactie.
-
+De Jellycat-website is vriendelijk en rustig, met veel witruimte en een duidelijke structuur.  
+Ik kan hiermee goed oefenen met responsive design, semantische HTML en een kleine micro-interactie.
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepage  
+<img src="readme-images/jellycat - homepage.png" width="375px" alt="Jellycat homepage small screen">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Bashful Bunny with Christmas Tree  
+<img src="readme-images/jellycat-product.png" width="375px" alt="Jellycat Bashful Bunny small screen">
  
 </details>
 
