@@ -48,7 +48,7 @@ Ik kies voor:
 2. **HEMA Extra / Klantenkaart-pagina** – met tekst, iconen en aanmeldformulier.
 
 De HEMA-site is herkenbaar, kleurrijk en gestructureerd.  
-Ik kan hiermee goed oefenen met *HTML-semantiek*, *responsive layout*, en een kleine *micro-interactie*.
+Ik kan hiermee goed oefenen met HTML-semantiek, responsive layout, en een kleine micro-interactie.
 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
