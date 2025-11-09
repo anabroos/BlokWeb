@@ -16,13 +16,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Ana Broos
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw, geen ervaring met coderen.
+  
+  #### Mijn verwachtingen
+  Ik nieuw met al deze codes, maar wil stap voor stap beter worden met HTML, CSS en JS.
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  responsive Ik kies voor **helemaal responsive**.  
+Dat betekent dat ik mijn website goed wil laten werken van kleine telefoons tot grote schermen.
  
 </details>
 
@@ -36,7 +40,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+Ik ga twee pagina’s van de **HEMA** website namaken.  
+**Originele website:** [https://www.hema.nl](https://www.hema.nl)
+
+Ik kies voor:  
+1. **Homepage** – met hero, productcategorieën en aanbiedingen.  
+2. **HEMA Extra / Klantenkaart-pagina** – met tekst, iconen en aanmeldformulier.
+
+De HEMA-site is herkenbaar, kleurrijk en gestructureerd.  
+Ik kan hiermee goed oefenen met *HTML-semantiek*, *responsive layout*, en een kleine *micro-interactie*.
+
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
