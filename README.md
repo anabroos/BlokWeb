@@ -45,7 +45,7 @@ Ik ga twee pagina’s van de **Jellycat** website namaken.
 
 Ik kies voor:  
 1. **Homepage** – met hero, categorieën en promobanners.  
-2. **Productpagina – Bashful Bunny with Christmas Tree** – met foto, prijs, beschrijving en Call To Action knop.  
+2. **Productpagina Bashful Bunny with Christmas Tree** – met foto, prijs, beschrijving en Call To Action knop.  
 
 De Jellycat-website is vriendelijk en rustig, met veel witruimte en een duidelijke structuur.  
 Ik kan hiermee goed oefenen met responsive design, semantische HTML en een kleine micro-interactie.
