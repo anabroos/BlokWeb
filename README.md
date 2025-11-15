@@ -80,21 +80,21 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
   - Er is geen automatisch geluid of video aanwezig, wat rustiger is voor gebruikers.
 
   #### Verbeterpunten
-  - De focus-styling is soms zwak, waardoor toetsenbordnavigatie minder duidelijk is.
+  - De focus styling (kleuren die aangeven waar je bent) is soms zwak, waardoor toetsenbordnavigatie (met tab door een website) minder duidelijk is.
   - Er is geen skip to content-link aanwezig.
   - Sommige banners of afbeeldingen hebben ontbrekende of onduidelijke alt-teksten.
   - De headingstructuur wijkt af van WCAG-richtlijnen (niveaus worden soms overgeslagen).
   - Kleine elementen zoals iconen hebben soms te weinig contrast.
   - Er wordt geen ondersteuning geboden voor dark mode of high-contrast weergave.
-  - De animaties/carrousels kunnen niet worden gepauzeerd en reageren niet op prefers reduced motion*.
+  - De animaties/carrousels kunnen niet worden gepauzeerd en reageren niet op prefers reduced motion.
 
-  ### Bevindingen
+#### Mobiel
   - Geen horizontale scroll (goed).
   - Alle hero-banners passen goed op mobiel.
   - Het menu is makkelijk te bedienen.
   - Sommige kleine elementen blijven lastig aan te tikken met een duim (wishlist, filters).
 
-  ### Media
+  #### Media
   - Geen video’s of audio aanwezig dus niet van toepassing.
 
   ### Samenvatting
@@ -102,7 +102,7 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
    Over het algemeen is de pagina redelijk toegankelijk, maar niet volledig WCAG-conform.
 
 
-### Bevindingen
+### Bevindingen 2e pagina
   De toegankelijkheidstest is ook uitgevoerd op de productpagina "Bashful Bunny with Christmas Tree" op 13 november 2025.  
   De test is uitgevoerd in Google Chrome op desktop en op safari op mobiel, met behulp van de WCAG-checklist.
   Tijdens het testen van de toegankelijkheid van de **Jellycat-productpagina** kwamen de volgende punten naar voren:
@@ -116,22 +116,22 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
   - Belangrijke knoppen (zoals "Add to Bag") zijn goed zichtbaar en makkelijk te vinden.
 
   #### Verbeterpunten
-  - De focus styling is niet overal even duidelijk, waardoor toetsenbordnavigatie soms lastig zichtbaar is.
+  - De focus styling  (kleuren die aangeven waar je bent) is niet overal even duidelijk, waardoor toetsenbordnavigatie (met tab door een website) soms lastig zichtbaar is.
   - Er is geen skip to content link aanwezig op de pagina zoals op de hoofdpagina.
   - Niet alle iconen (bijv. wishlist hartje) hebben een correcte of duidelijke alt-tekst.
   - De headingstructuur kan beter: sommige visuele koppen zijn geen echte HTML-headings.
   - Kleine iconen hebben soms te weinig contrast op een lichte achtergrond.
   - De site ondersteunt geen dark mode of high-contrast instellingen.
-  - Animaties reageren niet op *prefers reduced motion* en kunnen niet worden gepauzeerd.
+  - Animaties reageren niet op prefers reduced motion en kunnen niet worden gepauzeerd.
   - Sommige interactieve elementen zijn te klein op mobiel, waardoor mis-taps kunnen ontstaan.
 
-  ### Mobiel
+  #### Mobiel
   - De pagina schaalt goed mee op mobiel.
   - Er is geen horizontale scroll (goed).
   - Productfoto’s en knoppen zijn goed zichtbaar.
   - Kleine iconen zoals wishlist blijven moeilijk te raken met een duim.
 
-  ### Media
+  #### Media
   - Er zijn geen video's of audio op deze pagina, dus dit onderdeel is niet van toepassing.
 
   ### Samenvatting
