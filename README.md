@@ -313,8 +313,8 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. **Home page van Jellycat**: De homepage waar ik de toegangkelijkheidstest op heb gedaan https://eu.jellycat.com/ (*13 november 2025*)
+  2. **Product pagina**: De productpagina waar ik de toegangkelijkheidstest op heb gedaan https://eu.jellycat.com/bashful-bunny-with-christmas-tree/ (*13 november 2025*)
+  3. **Chat GPT**: Om te vragen hoe je in de read me woorden bold en cursief maakt en hoe je de koppen groter kunt maken https://chatgpt.com/ (*13 november 2025*)
 
 </details>
