@@ -81,14 +81,14 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
 
   #### Verbeterpunten
   - De focus-styling is soms zwak, waardoor toetsenbordnavigatie minder duidelijk is.
-  - Er is geen *skip to content*-link aanwezig.
+  - Er is geen skip to content-link aanwezig.
   - Sommige banners of afbeeldingen hebben ontbrekende of onduidelijke alt-teksten.
   - De headingstructuur wijkt af van WCAG-richtlijnen (niveaus worden soms overgeslagen).
   - Kleine elementen zoals iconen hebben soms te weinig contrast.
   - Er wordt geen ondersteuning geboden voor dark mode of high-contrast weergave.
-  - De animaties/carrousels kunnen niet worden gepauzeerd en reageren niet op *prefers-reduced-motion*.
+  - De animaties/carrousels kunnen niet worden gepauzeerd en reageren niet op prefers reduced motion*.
 
- ### mobiel
+  ### Bevindingen
   - Geen horizontale scroll (goed).
   - Alle hero-banners passen goed op mobiel.
   - Het menu is makkelijk te bedienen.
@@ -102,11 +102,9 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
    Over het algemeen is de pagina redelijk toegankelijk, maar niet volledig WCAG-conform.
 
 
-  ### Uitvoeringstesten
+### Bevindingen
   De toegankelijkheidstest is ook uitgevoerd op de productpagina "Bashful Bunny with Christmas Tree" op 13 november 2025.  
   De test is uitgevoerd in Google Chrome op desktop en op safari op mobiel, met behulp van de WCAG-checklist.
-
-  ### Bevindingen
   Tijdens het testen van de toegankelijkheid van de **Jellycat-productpagina** kwamen de volgende punten naar voren:
 
   #### Positieve punten
