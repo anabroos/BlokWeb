@@ -67,10 +67,84 @@ Ik kan hiermee goed oefenen met responsive design, semantische HTML en een klein
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
+De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com) op 13 november 2025. De test is uitgevoerd in Google Chrome op desktop en mobiel op safari, waarbij de WCAG-checklist als leidraad is gebruikt.
+
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Tijdens het testen van de toegankelijkheid van de **Jellycat-homepage** kwamen de volgende punten naar voren:
+
+  #### Positieve punten
+  - De homepage bevat duidelijke afbeeldingen en overzichtelijke navigatie.
+  - De website werkt goed op verschillende schermformaten (desktop, tablet, mobiel).
+  - De meeste tekst heeft voldoende kleurcontrast en is goed leesbaar.
+  - De focusvolgorde is grotendeels logisch opgebouwd.
+  - Er is geen automatisch geluid of video aanwezig, wat rustiger is voor gebruikers.
+
+  #### Verbeterpunten
+  - De focus-styling is soms zwak, waardoor toetsenbordnavigatie minder duidelijk is.
+  - Er is geen *skip to content*-link aanwezig.
+  - Sommige banners of afbeeldingen hebben ontbrekende of onduidelijke alt-teksten.
+  - De headingstructuur wijkt af van WCAG-richtlijnen (niveaus worden soms overgeslagen).
+  - Kleine elementen zoals iconen hebben soms te weinig contrast.
+  - Er wordt geen ondersteuning geboden voor dark mode of high-contrast weergave.
+  - De animaties/carrousels kunnen niet worden gepauzeerd en reageren niet op *prefers-reduced-motion*.
+
+ ### mobiel
+  - Geen horizontale scroll (goed).
+  - Alle hero-banners passen goed op mobiel.
+  - Het menu is makkelijk te bedienen.
+  - Sommige kleine elementen blijven lastig aan te tikken met een duim (wishlist, filters).
+
+  ### Media
+  - Geen video’s of audio aanwezig dus niet van toepassing.
+
+  ### Samenvatting
+   De homepage van Jellycat is visueel aantrekkelijk en grotendeels functioneel, maar mist een aantal belangrijke WCAG-richtlijnen. Vooral de focus-weergave, headingstructuur, alt-teksten en animatie-instellingen kunnen verbeterd worden.  
+   Over het algemeen is de pagina redelijk toegankelijk, maar niet volledig WCAG-conform.
+
+
+  ### Uitvoeringstesten
+  De toegankelijkheidstest is ook uitgevoerd op de productpagina "Bashful Bunny with Christmas Tree" op 13 november 2025.  
+  De test is uitgevoerd in Google Chrome op desktop en op safari op mobiel, met behulp van de WCAG-checklist.
+
+  ### Bevindingen
+  Tijdens het testen van de toegankelijkheid van de **Jellycat-productpagina** kwamen de volgende punten naar voren:
+
+  #### Positieve punten
+  - De productpagina heeft duidelijke afbeeldingen van hoge kwaliteit.
+  - Veel afbeeldingen bevatten alt-teksten die beschrijvend genoeg zijn voor screenreaders.
+  - De pagina is overzichtelijk opgebouwd met een duidelijke producttitel (h1) bovenaan.
+  - De pagina werkt goed responsive op verschillende schermformaten, inclusief mobiel.
+  - De tekst is over het algemeen goed leesbaar door voldoende kleurcontrast.
+  - Belangrijke knoppen (zoals "Add to Bag") zijn goed zichtbaar en makkelijk te vinden.
+
+  #### Verbeterpunten
+  - De focus styling is niet overal even duidelijk, waardoor toetsenbordnavigatie soms lastig zichtbaar is.
+  - Er is geen skip to content link aanwezig op de pagina zoals op de hoofdpagina.
+  - Niet alle iconen (bijv. wishlist hartje) hebben een correcte of duidelijke alt-tekst.
+  - De headingstructuur kan beter: sommige visuele koppen zijn geen echte HTML-headings.
+  - Kleine iconen hebben soms te weinig contrast op een lichte achtergrond.
+  - De site ondersteunt geen dark mode of high-contrast instellingen.
+  - Animaties reageren niet op *prefers reduced motion* en kunnen niet worden gepauzeerd.
+  - Sommige interactieve elementen zijn te klein op mobiel, waardoor mis-taps kunnen ontstaan.
+
+  ### Mobiel
+  - De pagina schaalt goed mee op mobiel.
+  - Er is geen horizontale scroll (goed).
+  - Productfoto’s en knoppen zijn goed zichtbaar.
+  - Kleine iconen zoals wishlist blijven moeilijk te raken met een duim.
+
+  ### Media
+  - Er zijn geen video's of audio op deze pagina, dus dit onderdeel is niet van toepassing.
+
+  ### Samenvatting
+  De productpagina van Jellycat is visueel duidelijk en redelijk toegankelijk, maar voldoet nog niet aan alle WCAG-richtlijnen.  
+  Vooral de focus-styling, alt-teksten, headingstructuur en ondersteuning voor toegankelijkheidsvoorkeuren kunnen verbeterd worden.  
+  Over het algemeen is de pagina toegankelijk voor de meeste gebruikers, maar nog niet volledig WCAG-conform.
 
 </details>
+
+
+
 
 
 
