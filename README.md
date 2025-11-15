@@ -69,7 +69,7 @@ Ik kan hiermee goed oefenen met responsive design, semantische HTML en een klein
 
 De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com) op 13 november 2025. De test is uitgevoerd in Google Chrome op desktop en mobiel op safari, waarbij de WCAG-checklist als leidraad is gebruikt.
 
-  ### Bevindingen
+  ### Bevindingen homepage
   Tijdens het testen van de toegankelijkheid van de **Jellycat-homepage** kwamen de volgende punten naar voren:
 
   #### Positieve punten
@@ -102,10 +102,10 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
    Over het algemeen is de pagina redelijk toegankelijk, maar niet volledig WCAG-conform.
 
 
-### Bevindingen 2e pagina
+### Bevindingen productpagina
   De toegankelijkheidstest is ook uitgevoerd op de productpagina "Bashful Bunny with Christmas Tree" op 13 november 2025.  
   De test is uitgevoerd in Google Chrome op desktop en op safari op mobiel, met behulp van de WCAG-checklist.
-  Tijdens het testen van de toegankelijkheid van de **Jellycat-productpagina** kwamen de volgende punten naar voren:
+  Tijdens het testen van de toegankelijkheid van de **Jellycat-productpagina** (https://eu.jellycat.com/bashful-bunny-with-christmas-tree/) wamen de volgende punten naar voren:
 
   #### Positieve punten
   - De productpagina heeft duidelijke afbeeldingen van hoge kwaliteit.
