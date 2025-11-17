@@ -44,7 +44,7 @@ Ik ga twee pagina’s van de **Jellycat** website namaken.
 **Originele website:** [https://www.jellycat.com](https://www.jellycat.com)
 
 Ik kies voor:  
-1. **Homepage** – met hero, categorieën en promobanners.  
+1. **Homepage** – met hero, categorieën en promobanners in een kerstthema.  
 2. **Productpagina Bashful Bunny with Christmas Tree** – met foto, prijs, beschrijving en Call To Action knop.  
 
 De Jellycat-website is vriendelijk en rustig, met veel witruimte en een duidelijke structuur.  
