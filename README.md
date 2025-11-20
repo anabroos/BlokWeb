@@ -153,15 +153,15 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
 
   ### de hele pagina: 
   <img src="readme-images/layout html1.jpg" width="375px" alt="breakdown 1 van de hele pagina">
-
+<br>
   <img src="readme-images/layout html2.jpg" width="375px" alt="breakdown 2 van de hele pagina">
-
+<br>
   <img src="readme-images/layout html3.jpg" width="375px" alt="breakdown 3 van de hele pagina">
-
+<br>
   <img src="readme-images/layout html4.jpg" width="375px" alt="breakdown 4 van de hele pagina">
-
+<br>
   <img src="readme-images/layout html5.jpg" width="375px" alt="breakdown 5 van de hele pagina">
-  
+<br>
   <img src="readme-images/layout html6.jpg" width="375px" alt="breakdown 6 van de hele pagina">
 
 
