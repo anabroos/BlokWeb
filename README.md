@@ -56,7 +56,7 @@ Ik kan hiermee goed oefenen met responsive design, semantische HTML en een klein
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Bashful Bunny with Christmas Tree  
-<img src="readme-images/jellycat-product.jpg" width="375px" alt="Jellycat Bashful Bunny small screen">
+<img src="readme-images/jellycat-product.jpg" width="375px" alt="Jellycat Bashful Bunny small screen"> 
  
 </details>
 
