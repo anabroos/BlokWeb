@@ -213,13 +213,11 @@ bij
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  samen met je groepje opstellen -   *Dit hebben wij als groepje niet voorbereid.*
+  
+  - Zelf wil ik kijken naar mijn breakdownsheet of dit een beetje klopt, zodat ik doorkan naar verwerken in html bestand.
+  - kloppen de afkortingen? Wat is de section en wat de article heb ik het andersom?
+  - Met de tijd red ik het nog?
 
 
   ### Verslag van meeting
@@ -229,7 +227,7 @@ bij
   - Als je # doen bij een link dan springt hij naar de home pagina
   - LI aanpassen naar UL
   - ul daar hoort een list in -  html ul opzoeken voor voorbeeld
-  - ...
+  - ? is een input dit kan ik bijwerken
 
 </details>
 
