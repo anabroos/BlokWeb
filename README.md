@@ -152,17 +152,17 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/layout html1.jpg" width="375px" alt="breakdown 1 van de hele pagina">
+  <img src="readme-images/1.png" width="375px" alt="breakdown 1 van de hele pagina">
 <br>
-  <img src="readme-images/layout html2.jpg" width="375px" alt="breakdown 2 van de hele pagina">
+  <img src="readme-images/2.png" width="375px" alt="breakdown 2 van de hele pagina">
 <br>
-  <img src="readme-images/layout html3.jpg" width="375px" alt="breakdown 3 van de hele pagina">
+  <img src="readme-images/3.png" width="375px" alt="breakdown 3 van de hele pagina">
 <br>
-  <img src="readme-images/layout html4.jpg" width="375px" alt="breakdown 4 van de hele pagina">
+  <img src="readme-images/4.png" width="375px" alt="breakdown 4 van de hele pagina">
 <br>
-  <img src="readme-images/layout html5.jpg" width="375px" alt="breakdown 5 van de hele pagina">
+  <img src="readme-images/5.png" width="375px" alt="breakdown 5 van de hele pagina">
 <br>
-  <img src="readme-images/layout html6.jpg" width="375px" alt="breakdown 6 van de hele pagina">
+  <img src="readme-images/6.png" width="375px" alt="breakdown 6 van de hele pagina">
 
 
   ### dynamisch deel (bijv menu): 
