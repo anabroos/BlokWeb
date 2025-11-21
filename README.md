@@ -166,9 +166,11 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
 
 
   ### dynamisch deel (bijv menu): 
+  moet nog
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
+  moet nog
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
@@ -199,6 +201,10 @@ In de vierde werkgroep heb ik gewerkt met Flexbox. Ik heb geleerd hoe je element
 
 Deze les heb ik helaas gemist en ga ik mij nog later in verdiepen
 
+## algemeen
+Bij de breakdownsheet heb ik geleerd dan section en article
+bij 
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -213,8 +219,8 @@ Deze les heb ik helaas gemist en ga ik mij nog later in verdiepen
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Bij heading moet je een section gebruiken
+  - 
   - nog een punt
   - ...
 
