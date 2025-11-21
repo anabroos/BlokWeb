@@ -217,7 +217,7 @@ bij
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  hier na afloop snel de uitkomsten van de meeting vastleggen (vr 21 nov 2025)
 
   - Bij heading moet je een section gebruiken
   - 
