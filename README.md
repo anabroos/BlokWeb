@@ -190,11 +190,17 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
 ## Werkgroep 3 – **CSS Grid & Media Queries**
 
 Tijdens de derde werkgroep heb ik geleerd hoe ik CSS Grid kan gebruiken om layouts te maken die flexibel en overzichtelijk zijn. Ik weet nu hoe ik rijen en kolommen definieer, hoe ik grid gebruik en hoe je elementen op het grid positioneert. Ook heb ik kennisgemaakt met media queries, waarmee ik layouts kan aanpassen aan verschillende schermformaten zoals mobiel, tablet en desktop responsive kan maken. 
+
+Hiermee kan ik oefenen om alles in een grid box te krijgen en vorm te geven
+
 **Dit heb ik geoefend met: Gird garden.**
 
 ## Werkgroep 4 – **Flexbox**
 
 In de vierde werkgroep heb ik gewerkt met Flexbox. Ik heb geleerd hoe je elementen horizontaal en verticaal kunt uitlijnen, hoe je ruimte verdeelt en hoe je flex-direction, justify-content en align-items gebruikt. Flexbox helpt vooral bij het bouwen van kleinere componenten en responsive onderdelen binnen een pagina.
+
+Hierbij kan je een sleep menu maken voor verschillende jallycats
+
  **Hierbij heb ik vooral gebuik gemaakt van :Flexbox Froggy**
 
 ## Werkgroep 5 – **JavaScript 3-stap**
