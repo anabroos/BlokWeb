@@ -226,7 +226,7 @@ bij
   hier na afloop snel de uitkomsten van de meeting vastleggen (vr 21 nov 2025)
 
   - Bij heading moet je een section gebruiken
-  - 
+  - als je # doen bij een link dan springt hij naar de home pagina
   - nog een punt
   - ...
 
