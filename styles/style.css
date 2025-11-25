@@ -88,25 +88,27 @@
 /****************/
 
 /* jouw code */
-
-main > section:first-of-type {
-  display: grid;
-  grid-template-columns: 1fr;  /* mobiel: 1 kolom */
-  gap: var(--space-l);
-
-  margin-top: var(--space-m);
-  background-color: var(--color-hero-bg);
-  padding: var(--space-l);
-  border-radius: var(--radius-m);
+main {
+  padding: 1.25em;
 }
 
-main > section:first-of-type > header {
+/*  grid */
+section {
   display: grid;
-  gap: var(--space-m);
+  grid-template-columns: 1fr;   /* 1 kolom (mobiel) */
+  gap: 2em;
+
+  margin-top: 1.25em;
+  background-color: #cde6e2;    /* jouw mintgroene kleur */
+  padding: 2em;
+  border-radius: 1em;
 }
 
-main > section:first-of-type > img {
-  width: 100%;
-  display: block;
-  border-radius: var(--radius-s);
+/*  responsive */
+@media (min-width: 48em) {
+  section {
+    grid-template-columns: 1fr 1fr;  /* nu 2 kolommen */
+    align-items: center;
+    padding: 3em;                    /* iets ruimere hero op groot scherm */
+  }
 }
