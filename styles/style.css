@@ -127,3 +127,45 @@ nav button {
   text-transform: uppercase;
 }
 
+main > section:first-of-type {
+  margin-top: var(--space-m);
+  background-color: var(--color-hero-bg);
+  border-radius: var(--radius-m);
+  padding: var(--space-l) var(--space-m);
+
+  display: grid;
+  grid-template-columns: 1fr; /* mobiel */
+  gap: var(--space-l);
+}
+
+/* Tekstblok */
+main > section:first-of-type > header {
+  display: grid;
+  gap: var(--space-m);
+}
+
+main > section:first-of-type > header h1 {
+  font-size: var(--font-size-title);
+}
+
+/* Button */
+main > section:first-of-type button {
+  padding: var(--space-s) var(--space-l);
+  border-radius: 999em;
+  border: 0.08em solid var(--color-text);
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: var(--font-size-small);
+}
+
+main > section:first-of-type button:hover {
+  background-color: var(--color-text);
+  color: #fff;
+}
+
+/* Afbeelding */
+main > section:first-of-type img {
+  width: 100%;
+  border-radius: var(--radius-s);
+}
