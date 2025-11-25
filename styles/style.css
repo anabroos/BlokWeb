@@ -77,9 +77,13 @@
 
 /* jouw code */
 
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-  font-family: 'Plus+Jakarta+Sans', sans-serif;
+  font-family: 'Plus+Jakarta+Sans';
   background-color: var(--color-page-bg);
   color: var(--color-text);
   font-size: var(--font-size-base);
+  max-width: var(--layout-max-width);
 }
+
