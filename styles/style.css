@@ -19,6 +19,12 @@
 	--color-background:#eee;
 }
 
+/*********************/
+/*variabelen */
+/*********************/
+
+
+
 /****************/
 /* lettertypes */
 /****************/
@@ -48,61 +54,195 @@
 
 /* jouw code */
 
-/* Kleine reset zodat alles voorspelbaar is */
+/* ========= CUSTOM PROPERTIES (VARIABELEN) ========= */
+:root {
+  /* Kleuren */
+  --color-page-bg: #f7f4f0;
+  --color-text: #333333;
+  --color-hero-bg: #cde6e2;
+  --color-link: #333333;
+  --color-link-hover: #111111;
+  --color-button-bg: #f4a9a2;
+  --color-button-text: #ffffff;
+
+  /* Afstanden */
+  --space-xs: 0.5em;
+  --space-s: 0.75em;
+  --space-m: 1.25em;
+  --space-l: 2em;
+  --space-xl: 3em;
+
+  /* Typografie */
+  --font-size-base: 1em;
+  --font-size-small: 0.9em;
+  --font-size-logo: 1.25em;
+  --font-size-hero-title: 1.5em;
+  --font-size-hero-title-large: 2em;
+
+  /* Layout */
+  --layout-max-width: 64em;
+
+  /* Rondingen */
+  --radius-s: 0.75em;
+  --radius-m: 1em;
+}
+
+/* ========= BASIS ========= */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Basis body-styling (mag je nog aanpassen) */
 body {
-  font-family:'Plus+Jakarta+Sans', sans-serif;
-  color: #333;
-  background-color: #f7f4f0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-page-bg);
 }
 
-/* ===== HEADER ===== */
-header {
-  display: flex;              /* zet logo en nav naast elkaar */
-  align-items: center;        /* verticaal centreren */
-  justify-content: space-between; /* ruimte tussen logo en menu */
-  padding: 1rem;              /* ruimte rondom de header */
-  max-width: 64rem;           /* max breedte, zodat het niet te breed wordt */
-  margin-inline: auto;        /* centreren op grotere schermen */
+/* Max-breedte voor content */
+body > header,
+main {
+  max-width: var(--layout-max-width);
+  margin-inline: auto;
 }
 
-/* Logo / sitenaam */
-header h1 {
-  font-size: 5 em;
-  letter-spacing: 0.08em;     /* beetje lucht tussen letters */
-  text-transform: uppercase;  /* hoofdletters zoals veel merken */
+/* ========= HEADER ========= */
+
+body > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-m);
 }
 
-/* Navigatie-lijst */
+/* Logo-link */
+body > header > a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: var(--font-size-logo);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Navigatie */
 nav ul {
-  list-style: none;           /* bolletjes weghalen */
-  display: flex;              /* links naast elkaar */
-  gap: 1 em;                  /* ruimte tussen de links */
+  list-style: none;
+  display: flex;
+  gap: var(--space-m);
 }
 
-/* Links zelf */
 nav a {
-  text-decoration: none;      /* streepje onder link weg */
-  font-size: 0.95rem;
-  color: #333;
+  text-decoration: none;
+  font-size: var(--font-size-small);
+  color: var(--color-link);
 }
 
-/* Hover- en focus-states voor toegankelijkheid */
 nav a:hover,
 nav a:focus-visible {
-  text-decoration: underline; /* laat zien dat het klikbaar is */
+  color: var(--color-link-hover);
+  text-decoration: underline;
 }
 
-/* Hamburgerknop voorlopig verbergen totdat we JS-menu maken */
+/* Hamburgerknop – later voor JS, nu verborgen op grotere schermen */
 nav button {
   display: none;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.8em;
+}
+
+/* ========= MAIN / HERO ========= */
+
+main {
+  padding-inline: var(--space-m);
+  padding-bottom: var(--space-xl);
+}
+
+/* Hero-section */
+main > section:first-of-type {
+  margin-top: var(--space-m);
+  background-color: var(--color-hero-bg);
+  border-radius: var(--radius-m);
+
+  display: flex;
+  flex-direction: column; /* mobile-first: onder elkaar */
+  gap: var(--space-m);
+  padding: var(--space-l) var(--space-m);
+}
+
+/* Tekst in hero */
+main > section:first-of-type > header p:first-of-type {
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-xs);
+}
+
+main > section:first-of-type > header h2 {
+  font-size: var(--font-size-hero-title);
+  margin-bottom: var(--space-xs);
+}
+
+main > section:first-of-type > header p:last-of-type {
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  margin-bottom: var(--space-m);
+}
+
+/* Hero-knop */
+main > section:first-of-type > header button {
+  padding: var(--space-s) var(--space-l);
+  border-radius: 999em;
+  border: 0.08em solid var(--color-text);
+  background-color: transparent;
+  color: var(--color-text);
+  font-size: var(--font-size-small);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main > section:first-of-type > header button:hover,
+main > section:first-of-type > header button:focus-visible {
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+}
+
+/* Hero-afbeelding */
+main > section:first-of-type figure img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-s);
+}
+
+/* ========= RESPONSIVE (TABLET & BREDER) ========= */
+
+@media (min-width: 48em) {
+  body > header {
+    padding-inline: var(--space-l);
+  }
+
+  nav a {
+    font-size: var(--font-size-base);
+  }
+
+  main > section:first-of-type {
+    flex-direction: row;          /* tekst + foto naast elkaar */
+    align-items: center;
+    padding: var(--space-xl);
+    gap: var(--space-xl);
+  }
+
+  main > section:first-of-type > header,
+  main > section:first-of-type > figure {
+    flex: 1;
+  }
+
+  main > section:first-of-type > header h2 {
+    font-size: var(--font-size-hero-title-large);
+  }
 }
