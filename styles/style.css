@@ -71,101 +71,39 @@
   }
 }
 
+@media (min-width: 48em) {
+  main > section:first-of-type {
+    grid-template-columns: 1fr 1fr; /* 2 kolommen */
+    align-items: center;
+  }
+}
+
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  font-family: 'Montserrat';
-  background-color: var(--color-page-bg);
-  color: var(--color-text);
-  font-size: var(--font-size-base);
-  max-width: var(--layout-max-width);
-}
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-m);
-}
-
-
-header a {
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: 1.25em;nav ul {
-  list-style: none;
-  display: flex;
-  gap: var(--space-m);
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--color-link);
-  font-size: var(--font-size-small);
-}
-
-nav a:hover,
-nav a:focus-visible {
-  color: var(--color-link-hover);
-  text-decoration: underline;
-}
-
-nav button {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8em;
-}
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
 main > section:first-of-type {
-  margin-top: var(--space-m);
-  background-color: var(--color-hero-bg);
-  border-radius: var(--radius-m);
-  padding: var(--space-l) var(--space-m);
-
   display: grid;
-  grid-template-columns: 1fr; /* mobiel */
-  gap: var(--space-l);
+  grid-template-columns: 1fr;  /* 1 kolom */
+  gap: 1.5em;
+
+  background-color: var(--color-hero-bg);
+  padding: var(--space-l);
+  border-radius: var(--radius-m);
+  margin-top: var(--space-m);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Tekstblok */
 main > section:first-of-type > header {
   display: grid;
-  gap: var(--space-m);
+  gap: 1em;
 }
 
-main > section:first-of-type > header h1 {
-  font-size: var(--font-size-title);
-}
-
-/* Button */
-main > section:first-of-type button {
-  padding: var(--space-s) var(--space-l);
-  border-radius: 999em;
-  border: 0.08em solid var(--color-text);
-  background: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: var(--font-size-small);
-}
-
-main > section:first-of-type button:hover {
-  background-color: var(--color-text);
-  color: #fff;
-}
-
-/* Afbeelding */
 main > section:first-of-type img {
   width: 100%;
   border-radius: var(--radius-s);
 }
+
+
