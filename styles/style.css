@@ -129,3 +129,72 @@ img {
     padding: 3em;                    /* iets ruimere hero op groot scherm */
   }
 }
+
+
+
+:root {
+  --left-bg: #c6d8d8;
+  --text-color: #222222;
+  --button-border: #555555;
+  --font-size-base: 1em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+}
+
+/* De hele hero-sectie als grid-container */
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /* 3 kolommen (1, 2, 3) */
+  grid-template-rows: repeat(4, 1fr);   /* 4 rijen (1 t/m 4)   */
+  min-height: 70vh;
+}
+
+/* Linkerblok (tekst + button) */
+article {
+  grid-column: 1 / 2;   /* kolom 1 */
+  grid-row: 1 / 5;      /* rijen 1 t/m 4 */
+  background-color: var(--left-bg);
+  padding: 3em;
+}
+
+h1 {
+  margin: 0 0 1.5em 0;
+  font-size: 1.8em;
+}
+
+p {
+  margin: 0 0 2em 0;
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+/* Button onder de tekst */
+button {
+  padding: 0.8em 2.5em;
+  border: 0.1em solid var(--button-border);
+  background-color: transparent;
+  font-size: 0.9em;
+}
+
+/* Afbeelding rechts */
+figure {
+  grid-column: 2 / 4;   /* kolommen 2 en 3 */
+  grid-row: 1 / 5;      /* rijen 1 t/m 4  */
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
