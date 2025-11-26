@@ -94,15 +94,33 @@ main {
 
 /*  grid */
 section {
-  display: grid;
-  grid-template-columns: 1fr;   /* 1 kolom (mobiel) */
-  gap: 2em;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(4, 1fr);
 
-  margin-top: 1.25em;
-  background-color: #cde6e2;    /* jouw mintgroene kleur */
-  padding: 2em;
-  border-radius: 1em;
 }
+
+h1 {
+  /* JOUW CODE HIER */
+  /* .5em witruimte om h2 */
+  margin:.5rem;
+  grid-column-start: 2;
+}
+
+section :first-of-type p {
+grid-row-start: 2;
+}
+
+/* afbeeding */
+img {
+  /* JOUW CODE HIER */
+  /*img als eerste */
+  grid-row-start:span 2/3;
+  /* order:-1; kan ook - net als bij flex */
+}
+
+
+
+
 
 /*  responsive */
 @media (min-width: 48em) {

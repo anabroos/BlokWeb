@@ -192,6 +192,22 @@ De toegankelijkheidstest is uitgevoerd op de homepage van Jellycat (jellycat.com
 Tijdens de derde werkgroep heb ik geleerd hoe ik CSS Grid kan gebruiken om layouts te maken die flexibel en overzichtelijk zijn. Ik weet nu hoe ik rijen en kolommen definieer, hoe ik grid gebruik en hoe je elementen op het grid positioneert. Ook heb ik kennisgemaakt met media queries, waarmee ik layouts kan aanpassen aan verschillende schermformaten zoals mobiel, tablet en desktop responsive kan maken. 
 
 Hiermee kan ik oefenen om alles in een grid box te krijgen en vorm te geven
+## hoe werkt het##
+ **grid-column-start:** bepaald welke startpositie binnen grid kolommen |
+ zo doe je het
+ display: grid;
+  grid-template-columns: 8;
+  grid-template-rows: 8;
+
+  grid-column-start: span 3;
+  grid-column-end: 6;
+
+ Maar je kan het verbreden over meerdere columns door de **grid-column-end-property** toe te voegen.
+ ls je gridlijnen vanaf rechts in plaats van links wilt tellen, kan je grid-column-start en grid-column-end negatieve waardes geven. Je kan hem bijvoorbeelds op **-1 zetten** om de eerste gridlijn vanaf rechts aan te spreken.
+ In plaats van een grid item te definiëren op basis van de start- en eindposities van de gridlijnen, kan je hem definiëren op basis van het aantal kolommen dat je wilt invullen, door het **span**-sleutelwoord te gebruiken. Onthoud dat *span alleen werkt met positieve waardes*.
+  **grid-column: 2 / 4;** laat het griditem starten op de 2e verticale gridlijn en eindigen op de 4e gridlijn. werkt ook met span
+
+ **grid-template-rows:** bepaald welke startpositie binnen grid rijen -
 
 **Dit heb ik geoefend met: Gird garden.**
 
