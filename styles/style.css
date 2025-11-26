@@ -77,8 +77,15 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+body {
+margin: 0;
+  font-family:font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+}
 
-/* jouw code */
 main {
   padding: 1.25em;
 }
@@ -107,6 +114,7 @@ img {
   /*img als eerste */
   grid-row-start:span 2/3;
   /* order:-1; kan ook - net als bij flex */
+  
 }
 
 
