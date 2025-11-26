@@ -14,16 +14,7 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
 
-/*********************/
-/*variabelen */
-/*********************/
-
-:root {
 /* kleuren */
   --color-page-bg: #f7f4f0;
   --color-text: #333333;
@@ -37,7 +28,7 @@
   --space-l: 2em;
   --space-xl: 3em;
 
-/* kleuren */
+/* lettertypes */
   --font-size-base: 1em;
   --font-size-small: 0.9em;
   --font-size-title: 1.8em;
