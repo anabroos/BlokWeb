@@ -112,7 +112,7 @@ main > section:first-child {
     background: var(--color-blok);
     padding: var(--space-m);
     border-radius: var(--radius);
-    color: white;
+    color: black;
 }
 
 main > section:first-child h1 {
