@@ -115,16 +115,16 @@ main > section:first-child {
     color: black;
 }
 
-main > section:first-child h1 {
+main section:first-child h1 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
-main > section:first-child p {
+main section:first-child p {
     margin-bottom: var(--space-m);
 }
 
-main > section:first-child button {
+main section:first-child button {
     background: white;
     color: var(--color-text);
     padding: var(--space-s) var(--space-m);
@@ -133,56 +133,56 @@ main > section:first-child button {
     width: fit-content;
 }
 
-main > section:first-child img {
+main section:first-child img {
     width: 100%;
     border-radius: var(--radius);
 }
 
 /* PRODUCT GRID SECTIONS */
-main > section:nth-child(2) > ul,
-main > section:nth-child(4) > ul,
-main > section:nth-child(6) > ul {
+main section:nth-child(2) > ul,
+main section:nth-child(4) > ul,
+main section:nth-child(6) > ul {
     display: grid;
     gap: var(--space-m);
 }
 
-main > section:nth-child(2) > ul li,
-main > section:nth-child(4) > ul li,
-main > section:nth-child(6) > ul li {
+main section:nth-child(2) > ul li,
+main section:nth-child(4) > ul li,
+main section:nth-child(6) > ul li {
     background: var(--color-light-bg);
     border-radius: var(--radius);
     padding: var(--space-m);
     text-align: center;
 }
 
-main > section:nth-child(2) > ul img,
-main > section:nth-child(4) > ul img,
-main > section:nth-child(6) > ul img {
+main section:nth-child(2) > ul img,
+main section:nth-child(4) > ul img,
+main section:nth-child(6) > ul img {
     margin-bottom: var(--space-s);
     border-radius: var(--radius);
 }
 
-main > section:nth-child(2) > ul h3,
-main > section:nth-child(4) > ul h3,
-main > section:nth-child(6) > ul h3 {
+main section:nth-child(2) > ul h3,
+main section:nth-child(4) > ul h3,
+main section:nth-child(6) > ul h3 {
     font-size: var(--font-base);
     margin-bottom: var(--space-xs);
 }
 
-main > section:nth-child(2) > ul p,
-main > section:nth-child(4) > ul p,
-main > section:nth-child(6) > ul p {
+main section:nth-child(2) > ul p,
+main section:nth-child(4) > ul p,
+main section:nth-child(6) > ul p {
     font-weight: 600;
     color: var(--color-text);
 }
 
 /* CATEGORY SHOWCASE */
-main > section:nth-child(3) > ul {
+main section:nth-child(3) > ul {
     display: grid;
     gap: var(--space-m);
 }
 
-main > section:nth-child(3) > ul li {
+main section:nth-child(3) > ul li {
     border-radius: var(--radius);
     padding: var(--space-xl) var(--space-m);
     text-align: center;
@@ -191,41 +191,41 @@ main > section:nth-child(3) > ul li {
     align-items: end;
 }
 
-main > section:nth-child(3) > ul li:first-child {
+main section:nth-child(3) > ul li:first-child {
     background: var(--color-green);
 }
 
-main > section:nth-child(3) > ul li:nth-child(2) {
+main section:nth-child(3) > ul li:nth-child(2) {
     background: var(--color-purple);
 }
 
-main > section:nth-child(3) > ul li:last-child {
+main section:nth-child(3) > ul li:last-child {
     background: var(--color-pink);
 }
 
-main > section:nth-child(3) > ul h3 {
+main section:nth-child(3) > ul h3 {
     color: white;
     font-size: var(--font-large);
 }
 
 /* STOCKING FILLERS */
-main > section:nth-child(4) {
+main section:nth-child(4) {
     text-align: center;
 }
 
-main > section:nth-child(4) h2 {
+main section:nth-child(4) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-xs);
 }
 
-main > section:nth-child(4) > p {
+main section:nth-child(4) > p {
     font-size: var(--font-small);
     color: #666;
     margin-bottom: var(--space-m);
 }
 
 /* BORN IN LONDON */
-main > section:nth-child(5) {
+main section:nth-child(5) {
     display: grid;
     gap: var(--space-m);
     background: var(--color-light-bg);
@@ -233,21 +233,21 @@ main > section:nth-child(5) {
     border-radius: var(--radius);
 }
 
-main > section:nth-child(5) h2 {
+main section:nth-child(5) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
-main > section:nth-child(5) img {
+main section:nth-child(5) img {
     border-radius: var(--radius);
 }
 
 /* PRODUCT HIGHLIGHTS */
-main > section:nth-child(6) {
+main section:nth-child(6) {
     text-align: center;
 }
 
-main > section:nth-child(6) > button {
+main section:nth-child(6) button {
     background: var(--color-cyan);
     color: white;
     padding: var(--space-s) var(--space-l);
@@ -257,55 +257,55 @@ main > section:nth-child(6) > button {
 }
 
 /* CHOSEN FOR YOU / TRENDING */
-main > section:nth-child(7) {
+main section:nth-child(7) {
     text-align: center;
     padding: var(--space-m);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
 }
 
-main > section:nth-child(7) h2 {
+main section:nth-child(7) h2 {
     display: inline-block;
     margin: 0 var(--space-m) var(--space-m);
     font-size: var(--font-large);
 }
 
-main > section:nth-child(7) button {
+main section:nth-child(7) button {
     font-size: var(--font-xlarge);
     padding: var(--space-s);
     margin: 0 var(--space-xs);
 }
 
 /* INSTAGRAM SECTION */
-main > section:nth-child(8) {
+main section:nth-child(8) {
     text-align: center;
 }
 
-main > section:nth-child(8) h2 {
+main section:nth-child(8) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-m);
 }
 
-main > section:nth-child(8) > ul {
+main section:nth-child(8) > ul {
     display: grid;
     gap: var(--space-s);
     margin-bottom: var(--space-m);
 }
 
-main > section:nth-child(8) > ul img {
+main section:nth-child(8) > ul img {
     border-radius: var(--radius);
     background: var(--color-light-bg);
     aspect-ratio: 1;
     object-fit: cover;
 }
 
-main > section:nth-child(8) > p {
+main section:nth-child(8) > p {
     font-size: var(--font-large);
     color: var(--color-primary);
     margin-bottom: var(--space-s);
 }
 
-main > section:nth-child(8) > button {
+main section:nth-child(8) > button {
     background: var(--color-cyan);
     color: white;
     padding: var(--space-s) var(--space-l);
@@ -314,7 +314,7 @@ main > section:nth-child(8) > button {
 }
 
 /* PROMO BANNER */
-main > section:nth-child(9) {
+main section:nth-child(9) {
     display: grid;
     gap: var(--space-m);
     background: var(--color-light-bg);
@@ -322,20 +322,20 @@ main > section:nth-child(9) {
     overflow: hidden;
 }
 
-main > section:nth-child(9) img {
+main section:nth-child(9) img {
     width: 100%;
 }
 
-main > section:nth-child(9) article {
+main section:nth-child(9) article {
     padding: var(--space-m);
 }
 
-main > section:nth-child(9) h2 {
+main section:nth-child(9) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
-main > section:nth-child(9) button {
+main section:nth-child(9) button {
     background: var(--color-cyan);
     color: white;
     padding: var(--space-s) var(--space-l);
@@ -345,40 +345,40 @@ main > section:nth-child(9) button {
 }
 
 /* NEWSLETTER */
-main > section:nth-child(10) {
+main section:nth-child(10) {
     text-align: center;
     padding: var(--space-l) var(--space-m);
     background: var(--color-light-bg);
     border-radius: var(--radius);
 }
 
-main > section:nth-child(10) h2 {
+main section:nth-child(10) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
-main > section:nth-child(10) p {
+main section:nth-child(10) p {
     margin-bottom: var(--space-m);
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-main > section:nth-child(10) form {
+main section:nth-child(10) form {
     display: grid;
     gap: var(--space-s);
     max-width: 30rem;
     margin: 0 auto;
 }
 
-main > section:nth-child(10) input {
+main section:nth-child(10) input {
     padding: var(--space-s);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
     font-size: var(--font-base);
 }
 
-main > section:nth-child(10) button {
+main section:nth-child(10) button {
     background: var(--color-cyan);
     color: white;
     padding: var(--space-s);
@@ -430,18 +430,18 @@ footer form button {
     font-weight: 600;
 }
 
-footer > p {
+footer p {
     font-size: var(--font-small);
 }
 
-footer > ul {
+footer ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: var(--space-s);
     max-width: 15rem;
 }
 
-footer > ul a {
+footer ul a {
     font-size: var(--font-large);
     text-align: center;
 }
@@ -454,27 +454,27 @@ footer > ul a {
         padding: var(--space-s) var(--space-m);
     }
     
-    header > a {
+    header a {
         order: -1;
     }
     
-    header > a img {
+    header a img {
         width: 10rem;
         margin: 0;
     }
     
-    header > nav {
+    header nav {
         display: block;
     }
     
-    header > nav > ul {
+    header nav ul {
         display: grid;
         grid-auto-flow: column;
         gap: var(--space-m);
         font-size: var(--font-small);
     }
     
-    header > ul {
+    header  ul {
         justify-items: center;
     }
     
@@ -485,53 +485,53 @@ footer > ul a {
     }
     
     /* HERO */
-    main > section:first-child {
+    main section:first-child {
         grid-template-columns: 1fr 1fr;
         padding: var(--space-l);
         align-items: center;
     }
     
     /* PRODUCT GRIDS */
-    main > section:nth-child(2) > ul {
+    main section:nth-child(2) > ul {
         grid-template-columns: repeat(5, 1fr);
     }
     
-    main > section:nth-child(3) > ul {
+    main section:nth-child(3) > ul {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    main > section:nth-child(4) > ul {
+    main section:nth-child(4) > ul {
         grid-template-columns: repeat(5, 1fr);
     }
     
-    main > section:nth-child(6) > ul {
+    main section:nth-child(6) > ul {
         grid-template-columns: repeat(4, 1fr);
     }
     
     /* BORN IN LONDON */
-    main > section:nth-child(5) {
+    main section:nth-child(5) {
         grid-template-columns: 1fr 1fr;
         padding: var(--space-l);
         align-items: center;
     }
     
     /* INSTAGRAM */
-    main > section:nth-child(8) > ul {
+    main section:nth-child(8) > ul {
         grid-template-columns: repeat(6, 1fr);
     }
     
     /* PROMO BANNER */
-    main > section:nth-child(9) {
+    main section:nth-child(9) {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
     
-    main > section:nth-child(9) article {
+    main section:nth-child(9) article {
         padding: var(--space-l);
     }
     
     /* NEWSLETTER */
-    main > section:nth-child(10) form {
+    main section:nth-child(10) form {
         grid-template-columns: 1fr auto;
     }
     
@@ -551,11 +551,11 @@ footer > ul a {
         margin-top: var(--space-m);
     }
     
-    footer > ul {
+    footer ul {
         grid-column: 1 / -1;
     }
     
-    footer > p:last-child {
+    footer p:last-child {
         grid-column: 1 / -1;
     }
 }
