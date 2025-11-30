@@ -256,7 +256,40 @@ bij
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Dit is mijn kennis en hoe ik het heb toegepast
+
+### HTML-structuur
+- De pagina is opgebouwd met **semantische HTML5-tags** zoals `<header>`, `<nav>`, `<main>`, `<section>` en `<article>`, omdat dit zorgt voor een duidelijke en toegankelijke structuur.
+- Ik heb **geen classes of ID’s** gebruikt, zoals de opdracht voorschrijft. Alle styling gebeurt via elementselectoren en `nth-of-type()`.
+- Voor navigatie, producten, categorieën, Instagram en socialmedia-iconen gebruik ik **<ul>** en **<li>**. Dit maakt herhalende content overzichtelijk en logisch.
+- Elke sectie heeft een vaste volgorde: een **titel**, daarna **beschrijvende tekst**, gevolgd door **de inhoud**.
+
+### CSS-keuzes
+- De website is gemaakt met een **mobile-first aanpak**, zodat de pagina eerst goed werkt op kleine schermen.
+- Ik gebruik **CSS Grid** als belangrijkste layout-systeem. Dit zorgt voor flexibele en overzichtelijke grids voor o.a. de header, hero-sectie, productblokken en footer.
+- In `:root` heb ik **CSS-variabelen** aangemaakt voor kleuren, spacing, typografie en border-radius. Hierdoor blijft het ontwerp consistent en makkelijk aan te passen.
+
+### Responsief ontwerp
+- Er is **één breakpoint op 60em (960px)** om over te schakelen naar de desktoplayout.
+- Op desktop:
+  - De header wordt een **3-koloms grid** en het volledige menu wordt zichtbaar.
+  - De hero, Born in London-sectie en de promotiebanner veranderen in **twee kolommen**.
+  - Productoverzichten bestaan uit **meerdere kolommen (3–5)**.
+  - De footer wordt een **4-koloms layout**.
+  - Het nieuwsbrief-formulier wordt naast elkaar geplaatst.
+
+### Technische keuzes
+- Ik maak gebruik van **`nth-of-type()`** en **`nth-child()`** om onderdelen te selecteren zonder classes.
+- Afbeeldingen hebben **beschrijvende alt-teksten** voor toegankelijkheid.
+- De kleuren zijn afgestemd op de Jellycat-stijl van de referentie.
+- Ik gebruik **rem**-eenheden zodat de tekst en layout meeschalen met de instellingen van de gebruiker.
+
+### Toegankelijkheid
+- De semantische HTML-structuur maakt de website beter leesbaar voor screenreaders.
+- Icon-knoppen hebben ARIA-labels zodat de functie duidelijk is.
+- Teksten en layout schalen mee als een gebruiker zijn browserinstellingen aanpast.
+- Formulieren en navigatie zijn volledig te bedienen met het toetsenbord.
+
 
 
   ### Agenda voor meeting
