@@ -126,7 +126,7 @@ main > section:first-child p {
 
 main > section:first-child button {
     background: white;
-    color: var(--color-blok);
+    color: var(--color-text);
     padding: var(--space-s) var(--space-m);
     border-radius: var(--radius);
     font-weight: 600;
