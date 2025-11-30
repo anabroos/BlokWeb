@@ -1,6 +1,5 @@
 
 
-/* ---------- ROOT VARIABLES ---------- */
 :root {
     --color-primary: #e87722;
     --color-bg: #ffffff;
@@ -22,11 +21,10 @@
     --font-small: 0.875rem;
     --font-large: 1.25rem;
     --font-xlarge: 2rem;
-
+    
     --radius: 0.5rem;
 }
 
-/* ---------- RESET ---------- */
 * {
     margin: 0;
     padding: 0;
@@ -61,10 +59,10 @@ button {
     border: none;
     background: none;
     font-family: inherit;
+    font-size: inherit;
 }
 
-
-/* ---------- HEADER ---------- */
+/* HEADER */
 header {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -72,22 +70,23 @@ header {
     padding: var(--space-s);
     gap: var(--space-s);
     border-bottom: 1px solid var(--color-border);
-    background: var(--color-bg);
     position: sticky;
     top: 0;
+    background: var(--color-bg);
     z-index: 100;
 }
 
-header nav {
+header > nav {
     display: none;
 }
 
-header a img {
+header > a img {
     width: 8rem;
+    height: auto;
     margin: 0 auto;
 }
 
-header ul:nth-of-type(2) {
+header > ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-xs);
@@ -99,17 +98,15 @@ header button {
     padding: var(--space-xs);
 }
 
-
-/* ---------- MAIN LAYOUT ---------- */
+/* MAIN */
 main {
     display: grid;
     gap: var(--space-xl);
     padding: var(--space-m) var(--space-s);
 }
 
-
-/* ---------- SECTION 1 — HERO ---------- */
-main section:nth-of-type(1) {
+/* HERO SECTION */
+main > section:first-child {
     display: grid;
     gap: var(--space-m);
     background: var(--color-primary);
@@ -118,16 +115,16 @@ main section:nth-of-type(1) {
     color: white;
 }
 
-main section:nth-of-type(1) article h1 {
+main > section:first-child h1 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
-main section:nth-of-type(1) article p {
+main > section:first-child p {
     margin-bottom: var(--space-m);
 }
 
-main section:nth-of-type(1) article button {
+main > section:first-child button {
     background: white;
     color: var(--color-primary);
     padding: var(--space-s) var(--space-m);
@@ -136,107 +133,99 @@ main section:nth-of-type(1) article button {
     width: fit-content;
 }
 
-main section:nth-of-type(1) img {
+main > section:first-child img {
+    width: 100%;
     border-radius: var(--radius);
 }
 
-
-/* ---------- SECTION 2 — PRODUCT GRID 1 ---------- */
-main section:nth-of-type(2) ul {
+/* PRODUCT GRID SECTIONS */
+main > section:nth-child(2) > ul,
+main > section:nth-child(4) > ul,
+main > section:nth-child(6) > ul {
     display: grid;
     gap: var(--space-m);
 }
 
-main section:nth-of-type(2) ul li {
+main > section:nth-child(2) > ul li,
+main > section:nth-child(4) > ul li,
+main > section:nth-child(6) > ul li {
     background: var(--color-light-bg);
-    padding: var(--space-m);
     border-radius: var(--radius);
+    padding: var(--space-m);
     text-align: center;
 }
 
-main section:nth-of-type(2) ul li img {
+main > section:nth-child(2) > ul img,
+main > section:nth-child(4) > ul img,
+main > section:nth-child(6) > ul img {
     margin-bottom: var(--space-s);
     border-radius: var(--radius);
 }
 
-main section:nth-of-type(2) ul li h3 {
+main > section:nth-child(2) > ul h3,
+main > section:nth-child(4) > ul h3,
+main > section:nth-child(6) > ul h3 {
     font-size: var(--font-base);
     margin-bottom: var(--space-xs);
 }
 
-main section:nth-of-type(2) ul li p {
+main > section:nth-child(2) > ul p,
+main > section:nth-child(4) > ul p,
+main > section:nth-child(6) > ul p {
     font-weight: 600;
+    color: var(--color-text);
 }
 
-
-/* ---------- SECTION 3 — CATEGORY BLOCKS ---------- */
-main section:nth-of-type(3) ul {
+/* CATEGORY SHOWCASE */
+main > section:nth-child(3) > ul {
     display: grid;
     gap: var(--space-m);
 }
 
-main section:nth-of-type(3) ul li {
-    padding: var(--space-xl) var(--space-m);
+main > section:nth-child(3) > ul li {
     border-radius: var(--radius);
+    padding: var(--space-xl) var(--space-m);
     text-align: center;
     min-height: 15rem;
     display: grid;
     align-items: end;
 }
 
-main section:nth-of-type(3) ul li:nth-of-type(1) {
+main > section:nth-child(3) > ul li:first-child {
     background: var(--color-green);
 }
 
-main section:nth-of-type(3) ul li:nth-of-type(2) {
+main > section:nth-child(3) > ul li:nth-child(2) {
     background: var(--color-purple);
 }
 
-main section:nth-of-type(3) ul li:nth-of-type(3) {
+main > section:nth-child(3) > ul li:last-child {
     background: var(--color-pink);
 }
 
-main section:nth-of-type(3) ul li h3 {
-    font-size: var(--font-large);
+main > section:nth-child(3) > ul h3 {
     color: white;
+    font-size: var(--font-large);
 }
 
-
-/* ---------- SECTION 4 — PRODUCT GRID 2 ---------- */
-main section:nth-of-type(4) {
+/* STOCKING FILLERS */
+main > section:nth-child(4) {
     text-align: center;
 }
 
-main section:nth-of-type(4) h2 {
+main > section:nth-child(4) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-xs);
 }
 
-main section:nth-of-type(4) p {
+main > section:nth-child(4) > p {
     font-size: var(--font-small);
     color: #666;
     margin-bottom: var(--space-m);
 }
 
-main section:nth-of-type(4) ul {
-    display: grid;
-    gap: var(--space-m);
-}
-
-main section:nth-of-type(4) ul li {
-    background: var(--color-light-bg);
-    padding: var(--space-m);
-    border-radius: var(--radius);
-}
-
-main section:nth-of-type(4) ul li img {
-    border-radius: var(--radius);
-    margin-bottom: var(--space-s);
-}
-
-
-/* ---------- SECTION 5 — BORN IN LONDON ---------- */
-main section:nth-of-type(5) {
+/* BORN IN LONDON */
+main > section:nth-child(5) {
     display: grid;
     gap: var(--space-m);
     background: var(--color-light-bg);
@@ -244,90 +233,88 @@ main section:nth-of-type(5) {
     border-radius: var(--radius);
 }
 
-main section:nth-of-type(5) article h2 {
+main > section:nth-child(5) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
-main section:nth-of-type(5) img {
+main > section:nth-child(5) img {
     border-radius: var(--radius);
 }
 
+/* PRODUCT HIGHLIGHTS */
+main > section:nth-child(6) {
+    text-align: center;
+}
 
-/* ---------- SECTION 6 — CHOSEN FOR YOU ---------- */
-main section:nth-of-type(6) {
+main > section:nth-child(6) > button {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-s) var(--space-l);
+    border-radius: var(--radius);
+    font-weight: 600;
+    margin-top: var(--space-m);
+}
+
+/* CHOSEN FOR YOU / TRENDING */
+main > section:nth-child(7) {
     text-align: center;
     padding: var(--space-m);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
 }
 
-main section:nth-of-type(6) h2 {
-    font-size: var(--font-large);
+main > section:nth-child(7) h2 {
+    display: inline-block;
     margin: 0 var(--space-m) var(--space-m);
+    font-size: var(--font-large);
 }
 
-main section:nth-of-type(6) button {
+main > section:nth-child(7) button {
     font-size: var(--font-xlarge);
+    padding: var(--space-s);
     margin: 0 var(--space-xs);
 }
 
-
-/* ---------- SECTION 7 — PRODUCT HIGHLIGHTS ---------- */
-main section:nth-of-type(7) {
+/* INSTAGRAM SECTION */
+main > section:nth-child(8) {
     text-align: center;
 }
 
-main section:nth-of-type(7) ul {
-    display: grid;
-    gap: var(--space-m);
-}
-
-main section:nth-of-type(7) ul li {
-    background: var(--color-light-bg);
-    padding: var(--space-m);
-    border-radius: var(--radius);
-}
-
-main section:nth-of-type(7) button {
-    background: var(--color-cyan);
-    color: white;
-    padding: var(--space-s) var(--space-l);
-    margin-top: var(--space-m);
-    border-radius: var(--radius);
-}
-
-
-/* ---------- SECTION 8 — INSTAGRAM ---------- */
-main section:nth-of-type(8) {
-    text-align: center;
-}
-
-main section:nth-of-type(8) h2 {
+main > section:nth-child(8) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-m);
 }
 
-main section:nth-of-type(8) ul {
+main > section:nth-child(8) > ul {
     display: grid;
     gap: var(--space-s);
     margin-bottom: var(--space-m);
 }
 
-main section:nth-of-type(8) ul li img {
+main > section:nth-child(8) > ul img {
+    border-radius: var(--radius);
+    background: var(--color-light-bg);
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: var(--radius);
 }
 
-main section:nth-of-type(8) p {
+main > section:nth-child(8) > p {
     font-size: var(--font-large);
     color: var(--color-primary);
+    margin-bottom: var(--space-s);
 }
 
+main > section:nth-child(8) > button {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-s) var(--space-l);
+    border-radius: var(--radius);
+    font-weight: 600;
+}
 
-/* ---------- SECTION 9 — BANNER ---------- */
-main section:nth-of-type(9) {
+/* PROMO BANNER */
+main > section:nth-child(9) {
     display: grid;
     gap: var(--space-m);
     background: var(--color-light-bg);
@@ -335,57 +322,71 @@ main section:nth-of-type(9) {
     overflow: hidden;
 }
 
-main section:nth-of-type(9) article {
+main > section:nth-child(9) img {
+    width: 100%;
+}
+
+main > section:nth-child(9) article {
     padding: var(--space-m);
 }
 
-main section:nth-of-type(9) article h2 {
+main > section:nth-child(9) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
-main section:nth-of-type(9) article button {
+main > section:nth-child(9) button {
     background: var(--color-cyan);
     color: white;
     padding: var(--space-s) var(--space-l);
     border-radius: var(--radius);
+    font-weight: 600;
+    margin-top: var(--space-m);
 }
 
-
-/* ---------- SECTION 10 — NEWSLETTER ---------- */
-main section:nth-of-type(10) {
+/* NEWSLETTER */
+main > section:nth-child(10) {
     text-align: center;
-    background: var(--color-light-bg);
     padding: var(--space-l) var(--space-m);
+    background: var(--color-light-bg);
     border-radius: var(--radius);
 }
 
-main section:nth-of-type(10) h2 {
+main > section:nth-child(10) h2 {
     font-size: var(--font-xlarge);
+    margin-bottom: var(--space-s);
 }
 
-main section:nth-of-type(10) form {
+main > section:nth-child(10) p {
+    margin-bottom: var(--space-m);
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > section:nth-child(10) form {
     display: grid;
     gap: var(--space-s);
     max-width: 30rem;
     margin: 0 auto;
 }
 
-main section:nth-of-type(10) input {
+main > section:nth-child(10) input {
     padding: var(--space-s);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
+    font-size: var(--font-base);
 }
 
-main section:nth-of-type(10) button {
+main > section:nth-child(10) button {
     background: var(--color-cyan);
     color: white;
     padding: var(--space-s);
     border-radius: var(--radius);
+    font-weight: 600;
 }
 
-
-/* ---------- FOOTER ---------- */
+/* FOOTER */
 footer {
     background: var(--color-cyan);
     color: white;
@@ -394,12 +395,18 @@ footer {
     gap: var(--space-m);
 }
 
+footer h3 {
+    font-size: var(--font-base);
+    margin-bottom: var(--space-s);
+    font-weight: 700;
+}
+
 footer nav ul {
     display: grid;
     gap: var(--space-xs);
 }
 
-footer nav ul li a {
+footer nav a {
     font-size: var(--font-small);
 }
 
@@ -408,8 +415,9 @@ footer form {
     gap: var(--space-xs);
 }
 
-footer form input {
+footer input {
     padding: var(--space-s);
+    border: none;
     border-radius: var(--radius);
     font-size: var(--font-small);
 }
@@ -422,125 +430,132 @@ footer form button {
     font-weight: 600;
 }
 
-footer p {
+footer > p {
     font-size: var(--font-small);
 }
 
-footer ul:nth-of-type(1) {
+footer > ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: var(--space-s);
     max-width: 15rem;
 }
 
-footer ul:nth-of-type(1) li a {
+footer > ul a {
     font-size: var(--font-large);
     text-align: center;
 }
 
-
-/* ---------- RESPONSIVE (DESKTOP) ---------- */
+/* RESPONSIVE - DESKTOP */
 @media (min-width: 60em) {
-
+    /* HEADER */
     header {
         grid-template-columns: auto 1fr auto;
         padding: var(--space-s) var(--space-m);
     }
     
-    header a:nth-of-type(1) {
+    header > a {
         order: -1;
     }
     
-    header a:nth-of-type(1) img {
+    header > a img {
         width: 10rem;
+        margin: 0;
     }
     
-    header nav {
+    header > nav {
         display: block;
     }
     
-    header nav ul {
+    header > nav > ul {
         display: grid;
         grid-auto-flow: column;
         gap: var(--space-m);
         font-size: var(--font-small);
     }
     
-    header ul:nth-of-type(2) {
+    header > ul {
         justify-items: center;
     }
-
+    
+    /* MAIN */
     main {
         padding: var(--space-l) var(--space-m);
         gap: var(--space-xl);
     }
-
-    main section:nth-of-type(1) {
+    
+    /* HERO */
+    main > section:first-child {
         grid-template-columns: 1fr 1fr;
         padding: var(--space-l);
         align-items: center;
     }
-
-    main section:nth-of-type(2) ul {
+    
+    /* PRODUCT GRIDS */
+    main > section:nth-child(2) > ul {
         grid-template-columns: repeat(5, 1fr);
     }
     
-    main section:nth-of-type(3) ul {
+    main > section:nth-child(3) > ul {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    main section:nth-of-type(4) ul {
+    
+    main > section:nth-child(4) > ul {
         grid-template-columns: repeat(5, 1fr);
     }
-
-    main section:nth-of-type(5) {
+    
+    main > section:nth-child(6) > ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* BORN IN LONDON */
+    main > section:nth-child(5) {
         grid-template-columns: 1fr 1fr;
         padding: var(--space-l);
         align-items: center;
     }
-
-    main section:nth-of-type(7) ul {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    main section:nth-of-type(8) ul {
+    
+    /* INSTAGRAM */
+    main > section:nth-child(8) > ul {
         grid-template-columns: repeat(6, 1fr);
     }
-
-    main section:nth-of-type(9) {
+    
+    /* PROMO BANNER */
+    main > section:nth-child(9) {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
-
-    main section:nth-of-type(9) article {
+    
+    main > section:nth-child(9) article {
         padding: var(--space-l);
     }
-
-    main section:nth-of-type(10) form {
+    
+    /* NEWSLETTER */
+    main > section:nth-child(10) form {
         grid-template-columns: 1fr auto;
     }
-
+    
+    /* FOOTER */
     footer {
-        grid-template-columns: repeat(4, 1fr);
         padding: var(--space-xl) var(--space-l);
+        grid-template-columns: repeat(4, 1fr);
     }
-
+    
     footer form {
         grid-column: 1 / -1;
         max-width: 30rem;
     }
-
-    footer p:nth-of-type(1) {
+    
+    footer > p:nth-last-child(3) {
         grid-column: 1 / -1;
         margin-top: var(--space-m);
     }
-
-    footer ul:nth-of-type(1) {
+    
+    footer > ul {
         grid-column: 1 / -1;
     }
-
-    footer p:nth-of-type(2),
-    footer p:nth-of-type(3) {
+    
+    footer > p:last-child {
         grid-column: 1 / -1;
     }
 }
