@@ -448,6 +448,36 @@ footer ul a {
     text-align: center;
 }
 
+@media (min-width: 60em) {
+    footer {
+        padding: var(--space-xl) var(--space-l);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    footer form {
+        grid-column: 1 / -1;
+        max-width: 30rem;
+    }
+
+    /* CONNECT WITH JELLYCAT (eerste p na het form) */
+    footer p:nth-of-type(1) {
+        grid-column: 1 / -1;
+        margin-top: var(--space-m);
+    }
+
+    /* social icons ul */
+    footer ul:nth-of-type(1) {
+        grid-column: 1 / -1;
+    }
+
+    /* laatste twee p’s onderaan */
+    footer p:nth-of-type(2),
+    footer p:nth-of-type(3) {
+        grid-column: 1 / -1;
+    }
+}
+
+
 /* RESPONSIVE - DESKTOP */
 @media (min-width: 60em) {
     /* HEADER */
