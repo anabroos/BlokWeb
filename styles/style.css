@@ -1,7 +1,7 @@
 
 
 :root {
-    --color-primary: #e87722;
+    --color-blok: #cde6e2;
     --color-bg: #ffffff;
     --color-text: #333333;
     --color-light-bg: #f8f8f8;
@@ -109,7 +109,7 @@ main {
 main > section:first-child {
     display: grid;
     gap: var(--space-m);
-    background: var(--color-primary);
+    background: var(--color-blok);
     padding: var(--space-m);
     border-radius: var(--radius);
     color: white;
