@@ -393,6 +393,7 @@ footer {
     padding: var(--space-l) var(--space-s);
     display: grid;
     gap: var(--space-m);
+    grid-template-columns: 1fr;
 }
 
 footer h3 {
@@ -439,6 +440,7 @@ footer ul {
     grid-template-columns: repeat(5, 1fr);
     gap: var(--space-s);
     max-width: 15rem;
+  
 }
 
 footer ul a {
