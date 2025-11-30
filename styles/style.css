@@ -387,66 +387,6 @@ main section:nth-child(10) button {
 }
 
 /* FOOTER */
-footer {
-    background: var(--color-cyan);
-    color: white;
-    padding: var(--space-l) var(--space-s);
-    display: grid;
-    gap: var(--space-m);
-    grid-template-columns: 1fr;
-}
-
-footer h3 {
-    font-size: var(--font-base);
-    margin-bottom: var(--space-s);
-    font-weight: 700;
-}
-
-footer nav ul {
-    display: grid;
-    gap: var(--space-xs);
-}
-
-footer nav a {
-    font-size: var(--font-small);
-}
-
-footer form {
-    display: grid;
-    gap: var(--space-xs);
-}
-
-footer input {
-    padding: var(--space-s);
-    border: none;
-    border-radius: var(--radius);
-    font-size: var(--font-small);
-}
-
-footer form button {
-    background: white;
-    color: var(--color-cyan);
-    padding: var(--space-s);
-    border-radius: var(--radius);
-    font-weight: 600;
-}
-
-footer p {
-    font-size: var(--font-small);
-}
-
-footer ul {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: var(--space-s);
-    max-width: 15rem;
-  
-}
-
-footer ul a {
-    font-size: var(--font-large);
-    text-align: center;
-}
 
 @media (min-width: 60em) {
     footer {
