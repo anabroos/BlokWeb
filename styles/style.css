@@ -1,200 +1,546 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
 
 
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
+/* ---------- ROOT VARIABLES ---------- */
 :root {
+    --color-primary: #e87722;
+    --color-bg: #ffffff;
+    --color-text: #333333;
+    --color-light-bg: #f8f8f8;
+    --color-border: #e0e0e0;
+    --color-green: #7aa54c;
+    --color-purple: #9b7bb8;
+    --color-pink: #f4c3cc;
+    --color-cyan: #2dd4d4;
+    
+    --space-xs: 0.5rem;
+    --space-s: 1rem;
+    --space-m: 2rem;
+    --space-l: 3rem;
+    --space-xl: 4rem;
+    
+    --font-base: 1rem;
+    --font-small: 0.875rem;
+    --font-large: 1.25rem;
+    --font-xlarge: 2rem;
 
-/* kleuren */
-  --color-page-bg: #f7f4f0;
-  --color-text: #333333;
-  --color-s1-bg: #cde6e2;
-  --color-link: #333333;
-  --color-link-hover: #000000;
-
-/* afstanden */
-  --space-s: 0.75em;
-  --space-m: 1.25em;
-  --space-l: 2em;
-  --space-xl: 3em;
-
-/* lettertypes */
-  --font-size-base: 1em;
-  --font-size-small: 0.9em;
-  --font-size-title: 1.8em;
-  --font-size-title-large: 2.2em;
-  --layout-max-width: 64em;
-  --radius-m: 1em;
-  --radius-s: 0.75em;
+    --radius: 0.5rem;
 }
 
-
-/****************/
-/* lettertypes */
-/****************/
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-
-/****************/
-/* media quiris*/
-/****************/
-
-@media (min-width: 48em) {
-  header {
-    padding-inline: 2em;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  nav a {
-    font-size: 1.1em;
-  }
-}
-
-@media (min-width: 48em) {
-  main > section:first-of-type {
-    grid-template-columns: 1fr 1fr;  
-    align-items: center;
-    padding: var(--space-xl);
-  }
-
-  main > section:first-of-type > header h1 {
-    font-size: var(--font-size-title-large);
-  }
-}
-
-/****************/
-/* JOUW STYLING */
-/****************/
-body {
-margin: 0;
-  font-family: "Black Han Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: var(--font-size-base);
-  color: var(--text-color);
-}
-
-main {
-  padding: 1.25em;
-}
-
-/*  grid */
-section {
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: repeat(4, 1fr);
-
-}
-
-h1 {
-  /* JOUW CODE HIER */
-  /* .5em witruimte om h2 */
-  margin:.5rem;
-  grid-column-start: 2;
-}
-
-section :first-of-type p {
-grid-row-start: 2;
-}
-
-/* afbeeding */
-img {
-  /* JOUW CODE HIER */
-  /*img als eerste */
-  grid-row-start:span 2/3;
-  /* order:-1; kan ook - net als bij flex */
-  
-}
-
-
-
-
-
-/*  responsive */
-@media (min-width: 48em) {
-  section {
-    grid-template-columns: 1fr 1fr;  /* nu 2 kolommen */
-    align-items: center;
-    padding: 3em;                    /* iets ruimere hero op groot scherm */
-  }
-}
-
-
-
-:root {
-  --left-bg: #c6d8d8;
-  --text-color: #222222;
-  --button-border: #555555;
-  --font-size-base: 1em;
-}
-
+/* ---------- RESET ---------- */
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  font-size: var(--font-size-base);
-  color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: var(--font-base);
+    color: var(--color-text);
+    line-height: 1.6;
+    background: var(--color-bg);
 }
 
-/* De hele hero-sectie als grid-container */
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;   /* 3 kolommen (1, 2, 3) */
-  grid-template-rows: repeat(4, 1fr);   /* 4 rijen (1 t/m 4)   */
-  min-height: 70vh;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Linkerblok (tekst + button) */
-article {
-  grid-column: 1 / 2;   /* kolom 1 */
-  grid-row: 1 / 5;      /* rijen 1 t/m 4 */
-  background-color: var(--left-bg);
-  padding: 3em;
+ul {
+    list-style: none;
 }
 
-h1 {
-  margin: 0 0 1.5em 0;
-  font-size: 1.8em;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-p {
-  margin: 0 0 2em 0;
-  line-height: 1.5;
-  font-size: 1em;
-}
-
-/* Button onder de tekst */
 button {
-  padding: 0.8em 2.5em;
-  border: 0.1em solid var(--button-border);
-  background-color: transparent;
-  font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
 }
 
-/* Afbeelding rechts */
-figure {
-  grid-column: 2 / 4;   /* kolommen 2 en 3 */
-  grid-row: 1 / 5;      /* rijen 1 t/m 4  */
-  margin: 0;
+
+/* ---------- HEADER ---------- */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: var(--space-s);
+    gap: var(--space-s);
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-figure img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
+header nav {
+    display: none;
+}
+
+header a img {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+header ul:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xs);
+    justify-items: end;
+}
+
+header button {
+    font-size: var(--font-large);
+    padding: var(--space-xs);
+}
+
+
+/* ---------- MAIN LAYOUT ---------- */
+main {
+    display: grid;
+    gap: var(--space-xl);
+    padding: var(--space-m) var(--space-s);
+}
+
+
+/* ---------- SECTION 1 — HERO ---------- */
+main section:nth-of-type(1) {
+    display: grid;
+    gap: var(--space-m);
+    background: var(--color-primary);
+    padding: var(--space-m);
+    border-radius: var(--radius);
+    color: white;
+}
+
+main section:nth-of-type(1) article h1 {
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--space-s);
+}
+
+main section:nth-of-type(1) article p {
+    margin-bottom: var(--space-m);
+}
+
+main section:nth-of-type(1) article button {
+    background: white;
+    color: var(--color-primary);
+    padding: var(--space-s) var(--space-m);
+    border-radius: var(--radius);
+    font-weight: 600;
+    width: fit-content;
+}
+
+main section:nth-of-type(1) img {
+    border-radius: var(--radius);
+}
+
+
+/* ---------- SECTION 2 — PRODUCT GRID 1 ---------- */
+main section:nth-of-type(2) ul {
+    display: grid;
+    gap: var(--space-m);
+}
+
+main section:nth-of-type(2) ul li {
+    background: var(--color-light-bg);
+    padding: var(--space-m);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+main section:nth-of-type(2) ul li img {
+    margin-bottom: var(--space-s);
+    border-radius: var(--radius);
+}
+
+main section:nth-of-type(2) ul li h3 {
+    font-size: var(--font-base);
+    margin-bottom: var(--space-xs);
+}
+
+main section:nth-of-type(2) ul li p {
+    font-weight: 600;
+}
+
+
+/* ---------- SECTION 3 — CATEGORY BLOCKS ---------- */
+main section:nth-of-type(3) ul {
+    display: grid;
+    gap: var(--space-m);
+}
+
+main section:nth-of-type(3) ul li {
+    padding: var(--space-xl) var(--space-m);
+    border-radius: var(--radius);
+    text-align: center;
+    min-height: 15rem;
+    display: grid;
+    align-items: end;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(1) {
+    background: var(--color-green);
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(2) {
+    background: var(--color-purple);
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(3) {
+    background: var(--color-pink);
+}
+
+main section:nth-of-type(3) ul li h3 {
+    font-size: var(--font-large);
+    color: white;
+}
+
+
+/* ---------- SECTION 4 — PRODUCT GRID 2 ---------- */
+main section:nth-of-type(4) {
+    text-align: center;
+}
+
+main section:nth-of-type(4) h2 {
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--space-xs);
+}
+
+main section:nth-of-type(4) p {
+    font-size: var(--font-small);
+    color: #666;
+    margin-bottom: var(--space-m);
+}
+
+main section:nth-of-type(4) ul {
+    display: grid;
+    gap: var(--space-m);
+}
+
+main section:nth-of-type(4) ul li {
+    background: var(--color-light-bg);
+    padding: var(--space-m);
+    border-radius: var(--radius);
+}
+
+main section:nth-of-type(4) ul li img {
+    border-radius: var(--radius);
+    margin-bottom: var(--space-s);
+}
+
+
+/* ---------- SECTION 5 — BORN IN LONDON ---------- */
+main section:nth-of-type(5) {
+    display: grid;
+    gap: var(--space-m);
+    background: var(--color-light-bg);
+    padding: var(--space-m);
+    border-radius: var(--radius);
+}
+
+main section:nth-of-type(5) article h2 {
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--space-s);
+}
+
+main section:nth-of-type(5) img {
+    border-radius: var(--radius);
+}
+
+
+/* ---------- SECTION 6 — CHOSEN FOR YOU ---------- */
+main section:nth-of-type(6) {
+    text-align: center;
+    padding: var(--space-m);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+main section:nth-of-type(6) h2 {
+    font-size: var(--font-large);
+    margin: 0 var(--space-m) var(--space-m);
+}
+
+main section:nth-of-type(6) button {
+    font-size: var(--font-xlarge);
+    margin: 0 var(--space-xs);
+}
+
+
+/* ---------- SECTION 7 — PRODUCT HIGHLIGHTS ---------- */
+main section:nth-of-type(7) {
+    text-align: center;
+}
+
+main section:nth-of-type(7) ul {
+    display: grid;
+    gap: var(--space-m);
+}
+
+main section:nth-of-type(7) ul li {
+    background: var(--color-light-bg);
+    padding: var(--space-m);
+    border-radius: var(--radius);
+}
+
+main section:nth-of-type(7) button {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-s) var(--space-l);
+    margin-top: var(--space-m);
+    border-radius: var(--radius);
+}
+
+
+/* ---------- SECTION 8 — INSTAGRAM ---------- */
+main section:nth-of-type(8) {
+    text-align: center;
+}
+
+main section:nth-of-type(8) h2 {
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--space-m);
+}
+
+main section:nth-of-type(8) ul {
+    display: grid;
+    gap: var(--space-s);
+    margin-bottom: var(--space-m);
+}
+
+main section:nth-of-type(8) ul li img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+main section:nth-of-type(8) p {
+    font-size: var(--font-large);
+    color: var(--color-primary);
+}
+
+
+/* ---------- SECTION 9 — BANNER ---------- */
+main section:nth-of-type(9) {
+    display: grid;
+    gap: var(--space-m);
+    background: var(--color-light-bg);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+main section:nth-of-type(9) article {
+    padding: var(--space-m);
+}
+
+main section:nth-of-type(9) article h2 {
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--space-s);
+}
+
+main section:nth-of-type(9) article button {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-s) var(--space-l);
+    border-radius: var(--radius);
+}
+
+
+/* ---------- SECTION 10 — NEWSLETTER ---------- */
+main section:nth-of-type(10) {
+    text-align: center;
+    background: var(--color-light-bg);
+    padding: var(--space-l) var(--space-m);
+    border-radius: var(--radius);
+}
+
+main section:nth-of-type(10) h2 {
+    font-size: var(--font-xlarge);
+}
+
+main section:nth-of-type(10) form {
+    display: grid;
+    gap: var(--space-s);
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+main section:nth-of-type(10) input {
+    padding: var(--space-s);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+main section:nth-of-type(10) button {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-s);
+    border-radius: var(--radius);
+}
+
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-l) var(--space-s);
+    display: grid;
+    gap: var(--space-m);
+}
+
+footer nav ul {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+footer nav ul li a {
+    font-size: var(--font-small);
+}
+
+footer form {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+footer form input {
+    padding: var(--space-s);
+    border-radius: var(--radius);
+    font-size: var(--font-small);
+}
+
+footer form button {
+    background: white;
+    color: var(--color-cyan);
+    padding: var(--space-s);
+    border-radius: var(--radius);
+    font-weight: 600;
+}
+
+footer p {
+    font-size: var(--font-small);
+}
+
+footer ul:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--space-s);
+    max-width: 15rem;
+}
+
+footer ul:nth-of-type(1) li a {
+    font-size: var(--font-large);
+    text-align: center;
+}
+
+
+/* ---------- RESPONSIVE (DESKTOP) ---------- */
+@media (min-width: 60em) {
+
+    header {
+        grid-template-columns: auto 1fr auto;
+        padding: var(--space-s) var(--space-m);
+    }
+    
+    header a:nth-of-type(1) {
+        order: -1;
+    }
+    
+    header a:nth-of-type(1) img {
+        width: 10rem;
+    }
+    
+    header nav {
+        display: block;
+    }
+    
+    header nav ul {
+        display: grid;
+        grid-auto-flow: column;
+        gap: var(--space-m);
+        font-size: var(--font-small);
+    }
+    
+    header ul:nth-of-type(2) {
+        justify-items: center;
+    }
+
+    main {
+        padding: var(--space-l) var(--space-m);
+        gap: var(--space-xl);
+    }
+
+    main section:nth-of-type(1) {
+        grid-template-columns: 1fr 1fr;
+        padding: var(--space-l);
+        align-items: center;
+    }
+
+    main section:nth-of-type(2) ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    main section:nth-of-type(3) ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main section:nth-of-type(4) ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    main section:nth-of-type(5) {
+        grid-template-columns: 1fr 1fr;
+        padding: var(--space-l);
+        align-items: center;
+    }
+
+    main section:nth-of-type(7) ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main section:nth-of-type(8) ul {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    main section:nth-of-type(9) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    main section:nth-of-type(9) article {
+        padding: var(--space-l);
+    }
+
+    main section:nth-of-type(10) form {
+        grid-template-columns: 1fr auto;
+    }
+
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+        padding: var(--space-xl) var(--space-l);
+    }
+
+    footer form {
+        grid-column: 1 / -1;
+        max-width: 30rem;
+    }
+
+    footer p:nth-of-type(1) {
+        grid-column: 1 / -1;
+        margin-top: var(--space-m);
+    }
+
+    footer ul:nth-of-type(1) {
+        grid-column: 1 / -1;
+    }
+
+    footer p:nth-of-type(2),
+    footer p:nth-of-type(3) {
+        grid-column: 1 / -1;
+    }
 }
