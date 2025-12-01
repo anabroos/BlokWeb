@@ -105,7 +105,7 @@ main {
     padding: var(--space-m) var(--space-s);
 }
 
-/* HERO SECTION */
+/* SECTION 1 */
 main section:first-child {
     display: grid;
     gap: var(--space-m);
@@ -138,7 +138,7 @@ main section:first-child img {
     border-radius: var(--radius);
 }
 
-/* PRODUCT GRID SECTIONS */
+/* PRODUCT GRID SECTIONS 2 */
 main section:nth-child(2) ul,
 main section:nth-child(4) ul,
 main section:nth-child(6) ul {
@@ -167,6 +167,7 @@ main section:nth-child(4) ul h3,
 main section:nth-child(6) ul h3 {
     font-size: var(--font-base);
     margin-bottom: var(--space-xs);
+
 }
 
 main section:nth-child(2) ul p,
@@ -176,7 +177,7 @@ main section:nth-child(6) ul p {
     color: var(--color-text);
 }
 
-/* CATEGORY SHOWCASE GEDEELTE */
+/* section 3vCATEGORY SHOWCASE GEDEELTE */
 main section:nth-child(3) ul {
     display: grid;
     gap: var(--space-m);
@@ -206,9 +207,12 @@ main section:nth-child(3) ul li:last-child {
 main section:nth-child(3) ul h3 {
     color: white;
     font-size: var(--font-large);
+    
+    margin-top: 3em;
+  
 }
 
-/* STOCKING FILLERS GEDEELTE */
+/* Section 4 STOCKING FILLERS GEDEELTE */
 main section:nth-child(4) {
     text-align: center;
 }
@@ -224,7 +228,7 @@ main section:nth-child(4) p {
     margin-bottom: var(--space-m);
 }
 
-/* BORN IN LONDON GEDEELTE*/
+/* Secion 5 BORN IN LONDON GEDEELTE*/
 main section:nth-child(5) {
     display: grid;
     gap: var(--space-m);
@@ -242,7 +246,7 @@ main section:nth-child(5) img {
     border-radius: var(--radius);
 }
 
-/* PRODUCT HIGHLIGHTS */
+/* section 6 PRODUCT HIGHLIGHTS */
 main section:nth-child(6) {
     text-align: center;
 }
@@ -256,30 +260,34 @@ main section:nth-child(6) button {
     margin-top: var(--space-m);
 }
 
-/* CHOSEN FOR YOU / TRENDING */
+/* section 7 CHOSEN FOR YOU / TRENDING */
 main section:nth-child(7) {
     text-align: center;
     padding: var(--space-m);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
-    display: flex;
+   
 }
 
 main section:nth-child(7) h2 {
-    display: inline-block;
     margin: 0 var(--space-m) var(--space-m);
     font-size: var(--font-large);
-    
+}
+
+main section:nth-child(7) ul {
+  display: flex;
+  gap: 7em;
+  margin: 1em;
 }
 
 main section:nth-child(7) button {
     font-size: var(--font-xlarge);
     padding: var(--space-s);
     margin: 0 var(--space-xs);
-    display: flex;
+    
 }
 
-/* INSTAGRAM SECTION */
+/* section 8 INSTAGRAM SECTION */
 main section:nth-child(8) {
     text-align: center;
 }
