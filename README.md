@@ -400,5 +400,6 @@ Dit is mijn kennis en hoe ik het heb toegepast
   1. **Home page van Jellycat**: De homepage waar ik de toegangkelijkheidstest op heb gedaan https://eu.jellycat.com/ (*13 november 2025*)
   2. **Product pagina**: De productpagina waar ik de toegangkelijkheidstest op heb gedaan https://eu.jellycat.com/bashful-bunny-with-christmas-tree/ (*13 november 2025*)
   3. **Chat GPT**: Om te vragen hoe je in de read me woorden bold en cursief maakt en hoe je de koppen groter kunt maken https://chatgpt.com/ (*13 november 2025*)
+  4. **geeksforgeeks** Voor vragen over flex https://www.geeksforgeeks.org/css/what-is-the-difference-between-inline-flex-and-inline-block-in-css/
 
 </details>
