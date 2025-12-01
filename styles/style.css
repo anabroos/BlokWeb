@@ -106,7 +106,7 @@ main {
 }
 
 /* HERO SECTION */
-main > section:first-child {
+main section:first-child {
     display: grid;
     gap: var(--space-m);
     background: var(--color-blok);
@@ -139,50 +139,50 @@ main section:first-child img {
 }
 
 /* PRODUCT GRID SECTIONS */
-main section:nth-child(2) > ul,
-main section:nth-child(4) > ul,
-main section:nth-child(6) > ul {
+main section:nth-child(2) ul,
+main section:nth-child(4) ul,
+main section:nth-child(6) ul {
     display: grid;
     gap: var(--space-m);
 }
 
-main section:nth-child(2) > ul li,
-main section:nth-child(4) > ul li,
-main section:nth-child(6) > ul li {
+main section:nth-child(2) ul li,
+main section:nth-child(4) ul li,
+main section:nth-child(6) ul li {
     background: var(--color-light-bg);
     border-radius: var(--radius);
     padding: var(--space-m);
     text-align: center;
 }
 
-main section:nth-child(2) > ul img,
-main section:nth-child(4) > ul img,
-main section:nth-child(6) > ul img {
+main section:nth-child(2) ul img,
+main section:nth-child(4) ul img,
+main section:nth-child(6) ul img {
     margin-bottom: var(--space-s);
     border-radius: var(--radius);
 }
 
-main section:nth-child(2) > ul h3,
-main section:nth-child(4) > ul h3,
-main section:nth-child(6) > ul h3 {
+main section:nth-child(2) ul h3,
+main section:nth-child(4) ul h3,
+main section:nth-child(6) ul h3 {
     font-size: var(--font-base);
     margin-bottom: var(--space-xs);
 }
 
-main section:nth-child(2) > ul p,
-main section:nth-child(4) > ul p,
-main section:nth-child(6) > ul p {
+main section:nth-child(2) ul p,
+main section:nth-child(4) ul p,
+main section:nth-child(6) ul p {
     font-weight: 600;
     color: var(--color-text);
 }
 
-/* CATEGORY SHOWCASE */
-main section:nth-child(3) > ul {
+/* CATEGORY SHOWCASE GEDEELTE */
+main section:nth-child(3) ul {
     display: grid;
     gap: var(--space-m);
 }
 
-main section:nth-child(3) > ul li {
+main section:nth-child(3) ul li {
     border-radius: var(--radius);
     padding: var(--space-xl) var(--space-m);
     text-align: center;
@@ -191,24 +191,24 @@ main section:nth-child(3) > ul li {
     align-items: end;
 }
 
-main section:nth-child(3) > ul li:first-child {
+main section:nth-child(3) ul li:first-child {
     background: var(--color-green);
 }
 
-main section:nth-child(3) > ul li:nth-child(2) {
+main section:nth-child(3) ul li:nth-child(2) {
     background: var(--color-purple);
 }
 
-main section:nth-child(3) > ul li:last-child {
+main section:nth-child(3) ul li:last-child {
     background: var(--color-pink);
 }
 
-main section:nth-child(3) > ul h3 {
+main section:nth-child(3) ul h3 {
     color: white;
     font-size: var(--font-large);
 }
 
-/* STOCKING FILLERS */
+/* STOCKING FILLERS GEDEELTE */
 main section:nth-child(4) {
     text-align: center;
 }
@@ -218,13 +218,13 @@ main section:nth-child(4) h2 {
     margin-bottom: var(--space-xs);
 }
 
-main section:nth-child(4) > p {
+main section:nth-child(4) p {
     font-size: var(--font-small);
     color: #666;
     margin-bottom: var(--space-m);
 }
 
-/* BORN IN LONDON */
+/* BORN IN LONDON GEDEELTE*/
 main section:nth-child(5) {
     display: grid;
     gap: var(--space-m);
@@ -286,26 +286,26 @@ main section:nth-child(8) h2 {
     margin-bottom: var(--space-m);
 }
 
-main section:nth-child(8) > ul {
+main section:nth-child(8) ul {
     display: grid;
     gap: var(--space-s);
     margin-bottom: var(--space-m);
 }
 
-main section:nth-child(8) > ul img {
+main section:nth-child(8) ul img {
     border-radius: var(--radius);
     background: var(--color-light-bg);
     aspect-ratio: 1;
     object-fit: cover;
 }
 
-main section:nth-child(8) > p {
+main section:nth-child(8) p {
     font-size: var(--font-large);
     color: var(--color-primary);
     margin-bottom: var(--space-s);
 }
 
-main section:nth-child(8) > button {
+main section:nth-child(8) button {
     background: var(--color-cyan);
     color: white;
     padding: var(--space-s) var(--space-l);
