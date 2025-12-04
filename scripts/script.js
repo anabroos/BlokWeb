@@ -5,8 +5,8 @@ console.log("hi");
 const burger=document.querySelector("header nav button")
 // const is een doosje dat niet veranderd je hrbt rrn constant daar blijvrn waardes het zelfde 
 
-// led
-// en bij led kan de waren veranderen
+// led kan ook 
+// en bij led kan de waren veranderen en bij console niet
 // achter const logische naam opslag
 // dan een = document om ergens naartoe te verwijzen om het te verwijzen naar const
 // .querySelector zoekt in mijn document en selecteer dus die gaat een document ui yhtml pakken

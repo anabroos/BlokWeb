@@ -64,39 +64,65 @@ button {
 
 /* HEADER */
 header {
+    position: sticky;
+    top: 0;
+    background: var(--color-bg);
+    z-index: 100;
+    border-bottom: 1px solid var(--color-border);
+}
+
+header p {
+    background: var(--color-light-bg);
+    text-align: center;
+    padding: var(--space-xs);
+    font-size: var(--font-small);
+}
+
+header section {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: var(--space-s);
     gap: var(--space-s);
-    border-bottom: 1px solid var(--color-border);
-    position: sticky;
-    top: 0;
-    background: var(--color-bg);
-    z-index: 100;
 }
 
-header > nav {
-    display: none;
+header section input {
+    padding: var(--space-xs) var(--space-s);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: var(--font-small);
 }
 
-header > a img {
+header section img {
     width: 8rem;
-    height: auto;
-    margin: 0 auto;
 }
 
-header > ul {
+header section  ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-xs);
     justify-items: end;
 }
 
-header button {
+header section button {
     font-size: var(--font-large);
     padding: var(--space-xs);
 }
+
+header nav {
+    display: none;
+    border-top: 1px solid var(--color-border);
+}
+
+header nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: var(--space-m);
+    padding: var(--space-s);
+    font-size: var(--font-small);
+}
+
 
 /* MAIN */
 main {
