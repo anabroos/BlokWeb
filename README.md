@@ -400,6 +400,16 @@ Dit is mijn kennis en hoe ik het heb toegepast
   1. **Home page van Jellycat**: De homepage waar ik de toegangkelijkheidstest op heb gedaan https://eu.jellycat.com/ (*13 november 2025*)
   2. **Product pagina**: De productpagina waar ik de toegangkelijkheidstest op heb gedaan https://eu.jellycat.com/bashful-bunny-with-christmas-tree/ (*13 november 2025*)
   3. **Chat GPT**: Om te vragen hoe je in de read me woorden bold en cursief maakt en hoe je de koppen groter kunt maken https://chatgpt.com/ (*13 november 2025*)
-  4. **geeksforgeeks** Voor vragen over flex https://www.geeksforgeeks.org/css/what-is-the-difference-between-inline-flex-and-inline-block-in-css/
+  4. **geeksforgeeks** Voor vragen over flex https://www.geeksforgeeks.org/css/5.  
+  5. **valideren sistematisch gemaakt**  what-is-the-difference-between-inline-flex-and-inline-block-in-css/
+  https://validator.w3.org/ (vanaf week 3)
+  6. **CSS w3schools** om css tags op te zoeken  https://www.w3schools.com/html/default.asp
+  7. **CSS w3schools** Om html codes op te zoeken  
+  8. **studentbegeleiders Maja en David** Voor alle vragen als de code niet werkte en uitleg over margin, paddig, grid, flex, en de breakdownsheats (tijdens voorgangs gesprek) voor een duidelijk steructuur om an de website te beginnen  
+  9. **Docent Vasilis van Gemert** Voor vragen of mijn code voldoet aan de voorwaarden en voor vragen bij het vast lopen of foutmeldingen in de code. 
+  10. **youtube** uileg hoe je een nieuwe pagina maakt en linkt https://www.youtube.com/watch?v=vzZ7TXGIQ3Y
+     uitleg over flex overzicht https://www.youtube.com/shorts/tpBzHfq_Z2o 
+     
+
 
 </details>
