@@ -322,8 +322,7 @@ Dit is mijn kennis en hoe ik het heb toegepast
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  Moet ik nog doen
 </details>
 
 
@@ -336,26 +335,12 @@ Dit is mijn kennis en hoe ik het heb toegepast
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  - De header en footer kreeg ik niet gelijk op beiden pagina's
+  - Ik wilde van 2 Css paginas naar 1
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  
+  - de header en footer op beiden paginas het zelfde maken
 
 </details>
 
@@ -369,19 +354,44 @@ Dit is mijn kennis en hoe ik het heb toegepast
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
+   Hieronder laat ik screenshots zien van onderdelen waar ik het meest trots op ben.  
+  Vooral de grid-layouts, de productpagina en het responsive gedrag laten goed zien wat ik deze weken heb geleerd.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
 
-  ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  ### Dit ging goed/Heb ik geleerd: 
+ In deze weken heb ik vooral geleerd hoe ik **HTML en CSS veel netter en logischer kan opbouwen**.  
+  Ik heb echt ontdekt hoe krachtig **CSS Grid** is, en hoe je met alleen `nth-child` selectors en semantische HTML een hele site kunt opzetten zonder classes.
+
+  Wat ik goed vond gaan:
+  - Ik snap hoe je **grid-template-columns** slim inzet voor verschillende layouts (van 1 kolom naar 4–6 kolommen).  
+  - Ik heb geleerd hoe ik **details/summary** kan gebruiken voor uitklapbare blokken zonder JavaScript.  
+  - Ik kan pagina's **opnieuw opbouwen in dezelfde stijl als een bestaande website** (Jellycat) met alleen HTML/CSS.  
+  - Ik heb geleerd om **variabelen in :root** te gebruiken voor consistentie.  
+  - Ik ben zekerder geworden in het ontleden van een layout en deze precies namaken.
+
+  <img src="./readme-images/GeenGrid.png" width="375px" alt="top">
+  <img src="./readme-images/Uitklappen.png" width="375px" alt="top">
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+ Niet alles ging in één keer goed. Ik liep vooral vast bij wat complexere onderdelen:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Wat ik lastig vond:
+  - De productpagina had veel kleine details, zoals pijltjes die **absoluut gepositioneerd** moesten worden over een afbeelding.  
+  - Omdat ik **geen classes** mocht gebruiken, moest ik slim omgaan met `nth-child`, wat best verwarrend werd in lange pagina’s.  
+  - Soms werkte een `grid-template` anders dan ik dacht, en moest ik veel testen tot het klopte.  
+  - De responsive layout van sommige sections (vooral Instagram en promo-banners) kostte tijd om netjes te krijgen.
+
+  Wat uiteindelijk niet helemaal gelukt is zoals het voorbeeld:
+  - Een paar responsive overgangen voelen nog een beetje abrupt.  
+  - Sommige stukken HTML had ik achteraf graag anders gestructureerd, maar dat kwam ik pas later achter.
+  - er had meer in Flex kunnen staan ipv Grid
+
+  <img src="readme-images/BuitenBeeld.png" width="375px" alt="bummer">
+  <img src="readme-images/GeenGridOpMain.png.png" width="375px" alt="bummer">
 </details>
 
 
@@ -403,12 +413,13 @@ Dit is mijn kennis en hoe ik het heb toegepast
   4. **geeksforgeeks** Voor vragen over flex https://www.geeksforgeeks.org/css/5.  
   5. **valideren sistematisch gemaakt**  what-is-the-difference-between-inline-flex-and-inline-block-in-css/
   https://validator.w3.org/ (vanaf week 3)
-  6. **CSS w3schools** om css tags op te zoeken  https://www.w3schools.com/html/default.asp
+  6. **CSS w3schools** om heel veel css tags op te zoeken  https://www.w3schools.com/html/default.asp
   7. **CSS w3schools** Om html codes op te zoeken  
   8. **studentbegeleiders Maja en David** Voor alle vragen als de code niet werkte en uitleg over margin, paddig, grid, flex, en de breakdownsheats (tijdens voorgangs gesprek) voor een duidelijk steructuur om an de website te beginnen  
   9. **Docent Vasilis van Gemert** Voor vragen of mijn code voldoet aan de voorwaarden en voor vragen bij het vast lopen of foutmeldingen in de code. 
   10. **youtube** uileg hoe je een nieuwe pagina maakt en linkt https://www.youtube.com/watch?v=vzZ7TXGIQ3Y
      uitleg over flex overzicht https://www.youtube.com/shorts/tpBzHfq_Z2o 
+  11. **Ronald en Ali** hebben geholpen met uitleg javascript omdat ik de les had gemist, uitleg hoe je van 2 css naar 1 ging en met foutmeldingen die ik over het hoofd zag
      
 
 
