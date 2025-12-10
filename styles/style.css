@@ -1,6 +1,118 @@
+/* 
+
+ MIJN CSS SPIEKBRIEF — GRID, FLEX & BASIS 
+
+ FLEXBOXXXXXXX (voor rij of kolom)
+
+display: flex;                  
+    - zet elementen naast elkaar (row) of onder elkaar (column)
+
+flex-direction: row;           
+    - items naast elkaar
+
+flex-direction: column;        
+    - items onder elkaar
+
+gap: 1rem;                     
+    - ruimte tussen flex-items
+
+justify-content: center;       
+    - verdeelt items HORIZONTAAL in het midden
+
+justify-content: space-between;
+    - eerste item links, laatste rechts, rest gelijk verdeeld ertussen
+
+justify-content: space-around; 
+    - gelijke ruimte om elk item heen (links + rechts)
+
+justify-content: flex-end;     
+    - schuift alle items naar rechts
+
+align-items: center;           
+    - verticaal centreren in de rij
+
+align-items: flex-start;       
+    - items bovenaan/links
+
+align-items: flex-end;         
+    - items onderaan/rechts
+
+
+
+GRIDDDDDD (voor rijen én kolommen)
+
+display: grid;
+    - activeert een grid-container
+
+grid-template-columns: 1fr 1fr;
+    - twee gelijke kolommen
+
+grid-template-columns: repeat(3, 1fr);
+    - drie gelijke kolommen
+
+grid-template-columns: auto 1fr auto;
+    - vaste - flexibel - vaste kolommen (bijv. header)
+
+grid-template-rows: auto auto;
+    - twee rijen met automatische hoogte
+
+gap: 1rem;                     
+    - ruimte tussen alle gridvakken
+
+row-gap: 1rem;                
+column-gap: 1rem;             
+    - rij- en kolomruimte apart
+
+grid-column: 1 / 3;
+    - item strekt van kolom 1 t/m 2
+
+grid-row: 1 / 4;
+    - item strekt van rij 1 t/m 3
+
+place-items: center;
+    - centreert items horizontaal én verticaal
+
+justify-items: center;
+    - centreert items horizontaal
+
+align-items: center;
+    - centreert items verticaal
+
+ responsive automatische grids 
+
+grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    - automatisch passend grid (ideaal voor productcards)
+
+
+
+ ALGEMENE CSS BASIS
+
+width: 100%;
+max-width: 100%;
+    - voorkomt dat elementen groter worden dan hun container
+
+padding / margin / border-radius
+    - spacing + vormgeving
+
+object-fit: cover;
+    - afbeelding vult vak zonder te rekken
+
+aspect-ratio: 1;
+    - maakt elementen vierkant (bijv. Instagram foto’s)
+
+box-sizing: border-box;
+    - padding telt mee binnen de breedte (fijnste instelling ooit)
+
+@media (min-width: 60em) {
+     desktop styles 
+-  responsieve layout activeren
+
+*/
+
 
 
 :root {
+    /* Kleuren */
     --color-blok: #cde6e2;
     --color-bg: #ffffff;
     --color-text: #333333;
@@ -11,20 +123,26 @@
     --color-pink: #f4c3cc;
     --color-cyan: #33cee5;
     --color-gray: #666666;
-      
+
+    /* Ruimte (spacing) */
     --space-xs: 0.5rem;
     --space-s: 1rem;
     --space-m: 2rem;
     --space-l: 3rem;
     --space-xl: 4rem;
-    
+
+    /* Lettergroottes */
     --font-base: 1rem;
     --font-small: 0.875rem;
     --font-large: 1.25rem;
     --font-xlarge: 2rem;
-    
+
+      /* Border radius en andere */
     --radius: 0.5rem;
+    --boxwidth: 3rem;  /* gebruikt voor het hamburger-menu blokje */
 }
+
+/* Reset: haal standaard marges/padding weg en zorg dat box-sizing logisch is */
 
 * {
     margin: 0;
@@ -32,6 +150,7 @@
     box-sizing: border-box;
 }
 
+/* Basis body-stijl */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-size: var(--font-base);
@@ -40,21 +159,35 @@ body {
     background: var(--color-bg);
 }
 
+/* Laatste li in header ul (het hamburger-menu met iconen) */
+header section ul li:last-of-type button {
+    border: none;
+    width: var(--boxwidth);
+    height: var(--boxwidth);
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+
+}
+/* Afbeeldingen responsief */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+/* Geen standaard bullets */
 ul {
     list-style: none;
 }
 
+/* Links zonder standaard onderlijning en kleur van de tekst */
 a {
     text-decoration: none;
     color: inherit;
 }
 
+/* Basis voor buttons: we stylen alles zelf */
 button {
     cursor: pointer;
     border: none;
@@ -65,13 +198,14 @@ button {
 
 /* HEADER */
 header {
-    position: sticky;
+    position: sticky; /* blijft bovenaan plakken */
     top: 0;
     background: var(--color-bg);
     z-index: 100;
     border-bottom: 1px solid var(--color-border);
 }
 
+/* Bovenste melding-balkje */
 header p {
     background: var(--color-light-bg);
     text-align: center;
@@ -79,14 +213,14 @@ header p {
     font-size: var(--font-small);
 }
 
+/* Binnenste section van de header (logo, zoekbalk, icons) */
 header section {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: var(--space-s);
     gap: var(--space-s);
 }
 
+/* Zoekveld */
 header section input {
     padding: var(--space-xs) var(--space-s);
     border: 1px solid var(--color-border);
@@ -94,44 +228,52 @@ header section input {
     font-size: var(--font-small);
 }
 
+/* Logo */
 header section img {
     width: 8rem;
 }
 
-header section > ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-xs);
-    justify-items: end;
+/* De ul rechts in de header (account, wishlist, bag, hamburger, etc.) */
+header section>ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    gap: var(--space-l);
 }
 
+/* Buttons in de header (icon-knoppen) */
 header section button {
     font-size: var(--font-large);
     padding: var(--space-xs);
 }
 
+/* Navigatiebalk onder de header (mobiel is deze wel verborgen) */
 header nav {
     display: none;
     border-top: 1px solid var(--color-border);
 }
 
+/* Lijst met links in de nav */
 header nav ul {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
+
     gap: var(--space-m);
     padding: var(--space-s);
     font-size: var(--font-small);
 }
 
-/* MAIN */
+/* MAIN PAGINA 1*/
+
 main {
-    display: grid;
     gap: var(--space-xl);
     padding: var(--space-m) var(--space-s);
 }
 
-/* SECTION 1 */
+/* 
+   SECTION 1: HERO BLOK (grote banner met afbeelding en call-to-action)
+   Hier maak ik de intro van de homepage met een tekstblok en een grote afbeelding.
+*/
+
 main section:first-child {
     display: grid;
     gap: var(--space-m);
@@ -141,15 +283,18 @@ main section:first-child {
     color: black;
 }
 
+/* De hoofdheadline van mijn hero maak ik extra groot. */
 main section:first-child h1 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
+/* De beschrijvende tekst onder de titel krijgt wat extra ruimte eronder. */
 main section:first-child p {
     margin-bottom: var(--space-m);
 }
 
+/* De call-to-action button laat ik opvallen met een witte achtergrond. */
 main section:first-child button {
     background: white;
     color: var(--color-text);
@@ -159,12 +304,18 @@ main section:first-child button {
     width: fit-content;
 }
 
+/* De hero-afbeelding maak ik netjes afgerond en volledig responsief. */
 main section:first-child img {
     width: 100%;
     border-radius: var(--radius);
 }
 
-/* PRODUCT GRID SECTIONS 2 */
+/* 
+   SECTIONS 2, 4, 6: PRODUCT GRIDS
+   Hier gebruik ik steeds dezelfde opzet voor productoverzichten.
+*/
+
+/* De ul's in deze sections maak ik grids zodat de producten als tegels verschijnen. */
 main section:nth-child(2) ul,
 main section:nth-child(4) ul,
 main section:nth-child(6) ul {
@@ -172,6 +323,7 @@ main section:nth-child(6) ul {
     gap: var(--space-m);
 }
 
+/* Elke li is één productkaartje met een eigen achtergrond. */
 main section:nth-child(2) ul li,
 main section:nth-child(4) ul li,
 main section:nth-child(6) ul li {
@@ -181,6 +333,7 @@ main section:nth-child(6) ul li {
     text-align: center;
 }
 
+/* De productafbeelding krijgt ruimte onder zich en afgeronde hoeken. */
 main section:nth-child(2) ul img,
 main section:nth-child(4) ul img,
 main section:nth-child(6) ul img {
@@ -188,14 +341,15 @@ main section:nth-child(6) ul img {
     border-radius: var(--radius);
 }
 
+/* De producttitels maak ik iets groter en geef ik ruimte eronder. */
 main section:nth-child(2) ul h3,
 main section:nth-child(4) ul h3,
 main section:nth-child(6) ul h3 {
     font-size: var(--font-base);
     margin-bottom: var(--space-xs);
-
 }
 
+/* De prijzen of korte info maak ik vet zodat ze beter opvallen. */
 main section:nth-child(2) ul p,
 main section:nth-child(4) ul p,
 main section:nth-child(6) ul p {
@@ -203,58 +357,75 @@ main section:nth-child(6) ul p {
     color: var(--color-text);
 }
 
-/* section 3vCATEGORY SHOWCASE GEDEELTE */
+/* 
+   SECTION 3: CATEGORY SHOWCASE 
+   Hier laat ik drie grote categorieblokken zien met verschillende kleuren.
+*/
+
 main section:nth-child(3) ul {
     display: grid;
     gap: var(--space-m);
 }
 
+/* Elk li is een groot gekleurd blok met een afbeelding en titel. */
 main section:nth-child(3) ul li {
     border-radius: var(--radius);
     padding: var(--space-xl) var(--space-m);
     text-align: center;
     min-height: 15rem;
     display: grid;
-    align-items: end;
+    align-items: end; /* Ik zorg dat de tekst mooi onderin het blok staat. */
 }
 
+/* De eerste categorie geef ik een groene achtergrond. */
 main section:nth-child(3) ul li:first-child {
     background: var(--color-green);
 }
 
+/* De tweede categorie krijgt een paarse achtergrond. */
 main section:nth-child(3) ul li:nth-child(2) {
     background: var(--color-purple);
 }
 
+/* De derde categorie krijgt een roze achtergrond. */
 main section:nth-child(3) ul li:last-child {
     background: var(--color-pink);
 }
 
+/* De kategorietitels maak ik wit en wat groter zodat ze goed leesbaar zijn. */
 main section:nth-child(3) ul h3 {
     color: white;
     font-size: var(--font-large);
-    
-    margin-top: 3em;
-  
+    margin-top: 3em; /* Extra ruimte boven de tekst. */
 }
 
-/* Section 4 STOCKING FILLERS GEDEELTE */
+/* 
+   SECTION 4: STOCKING FILLERS
+   Dit blok combineert een titel, subtitel en productgrid.
+*/
+
 main section:nth-child(4) {
     text-align: center;
 }
 
+/* De titel maak ik groot en geef ik wat ruimte naar beneden. */
 main section:nth-child(4) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-xs);
 }
 
+/* De subtitel is kleiner en wat grijzer, zodat hij minder schreeuwerig is. */
 main section:nth-child(4) p {
     font-size: var(--font-small);
     color: #666;
     margin-bottom: var(--space-m);
 }
 
-/* Secion 5 BORN IN LONDON GEDEELTE*/
+/* 
+   SECTION 5: BORN IN LONDON
+   Hier combineer ik een tekstblok met een afbeelding in een kaart.
+*/
+
 main section:nth-child(5) {
     display: grid;
     gap: var(--space-m);
@@ -263,20 +434,27 @@ main section:nth-child(5) {
     border-radius: var(--radius);
 }
 
+/* De titel van dit infoblok maak ik groot en duidelijk. */
 main section:nth-child(5) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
+/* De afbeelding krijgt afgeronde hoeken zodat hij in de kaart past. */
 main section:nth-child(5) img {
     border-radius: var(--radius);
 }
 
-/* section 6 PRODUCT HIGHLIGHTS */
+/* 
+   SECTION 6: PRODUCT HIGHLIGHTS
+   Dit blok bevat een productgrid met een opvallende knop eronder.
+*/
+
 main section:nth-child(6) {
     text-align: center;
 }
 
+/* De knop onder het grid maak ik opvallend blauw. */
 main section:nth-child(6) button {
     background: var(--color-cyan);
     color: white;
@@ -286,49 +464,62 @@ main section:nth-child(6) button {
     margin-top: var(--space-m);
 }
 
-/* section 7 CHOSEN FOR YOU / TRENDING */
+/* 
+   SECTION 7: CHOSEN FOR YOU / TRENDING
+   Dit blok lijkt op een tab/slider met knoppen.
+*/
+
 main section:nth-child(7) {
     text-align: center;
     padding: var(--space-m);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
-   
 }
 
+/* De titels van dit blok geef ik wat marge rondom. */
 main section:nth-child(7) h2 {
     margin: 0 var(--space-m) var(--space-m);
     font-size: var(--font-large);
 }
 
+/* Dit is de rij met tab-knoppen of opties. */
 main section:nth-child(7) ul {
-  display: flex;
-  gap: 7em;
-  margin: 1em;
+    display: flex;
+    gap: 7em;
+    margin: 1em;
 }
 
+/* De pijltjesknoppen (of andere iconen) maak ik extra groot. */
 main section:nth-child(7) button {
     font-size: var(--font-xlarge);
     padding: var(--space-s);
     margin: 0 var(--space-xs);
-    
 }
 
-/* section 8 INSTAGRAM SECTION */
+/* 
+   SECTION 8: INSTAGRAM SECTION
+   Hier toon ik een grid met Instagram-foto’s en een call-to-action daaronder.
+   MOET IK NOG AFMAKENNNNNNNN
+*/
+
 main section:nth-child(8) {
     text-align: center;
 }
 
+/* De Instagram-titel maak ik groot en geef ik ruimte eronder. */
 main section:nth-child(8) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-m);
 }
 
+/* De Instagram-foto’s zet ik in een grid. */
 main section:nth-child(8) ul {
     display: grid;
     gap: var(--space-s);
     margin-bottom: var(--space-m);
 }
 
+/* De foto’s maak ik vierkant met aspect-ratio en zorg dat ze mooi bijgesneden zijn. */
 main section:nth-child(8) ul img {
     border-radius: var(--radius);
     background: var(--color-light-bg);
@@ -336,12 +527,14 @@ main section:nth-child(8) ul img {
     object-fit: cover;
 }
 
+/* De hashtag-tekst laat ik extra opvallen met een accentkleur. */
 main section:nth-child(8) p {
     font-size: var(--font-large);
     color: var(--color-primary);
     margin-bottom: var(--space-s);
 }
 
+/* De knop om naar Instagram te gaan krijgt weer mijn blauwe knopstijl. */
 main section:nth-child(8) button {
     background: var(--color-cyan);
     color: white;
@@ -350,7 +543,11 @@ main section:nth-child(8) button {
     font-weight: 600;
 }
 
-/* PROMO BANNER */
+/* 
+   SECTION 9: PROMO BANNER
+   Hier combineer ik een grote afbeelding met een tekstblok en knop.
+*/
+
 main section:nth-child(9) {
     display: grid;
     gap: var(--space-m);
@@ -359,19 +556,23 @@ main section:nth-child(9) {
     overflow: hidden;
 }
 
+/* De promo-afbeelding neemt de volle breedte van de section in. */
 main section:nth-child(9) img {
     width: 100%;
 }
 
+/* Het tekstgedeelte krijgt wat extra padding. */
 main section:nth-child(9) article {
     padding: var(--space-m);
 }
 
+/* De promotitel maak ik groot en opvallend. */
 main section:nth-child(9) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
+/* De bijbehorende knop krijgt weer mijn standaard knopstijl. */
 main section:nth-child(9) button {
     background: var(--color-cyan);
     color: white;
@@ -381,7 +582,11 @@ main section:nth-child(9) button {
     margin-top: var(--space-m);
 }
 
-/* NEWSLETTER */
+/* 
+   SECTION 10: NEWSLETTER (op homepage)
+   Dit is mijn nieuwsbriefblok met tekst en een formulier.
+*/
+
 main section:nth-child(10) {
     text-align: center;
     padding: var(--space-l) var(--space-m);
@@ -389,11 +594,13 @@ main section:nth-child(10) {
     border-radius: var(--radius);
 }
 
+/* De titel van de nieuwsbrief maak ik extra groot. */
 main section:nth-child(10) h2 {
     font-size: var(--font-xlarge);
     margin-bottom: var(--space-s);
 }
 
+/* De uitlegtekst centreer ik en geef ik een maximale breedte. */
 main section:nth-child(10) p {
     margin-bottom: var(--space-m);
     max-width: 50rem;
@@ -401,6 +608,7 @@ main section:nth-child(10) p {
     margin-right: auto;
 }
 
+/* Het formulier met e-mailveld en knop maak ik een eenvoudig grid. */
 main section:nth-child(10) form {
     display: grid;
     gap: var(--space-s);
@@ -408,6 +616,7 @@ main section:nth-child(10) form {
     margin: 0 auto;
 }
 
+/* De inputstyle sluit aan bij de rest van de vormen op de pagina. */
 main section:nth-child(10) input {
     padding: var(--space-s);
     border: 1px solid var(--color-border);
@@ -415,6 +624,7 @@ main section:nth-child(10) input {
     font-size: var(--font-base);
 }
 
+/* De nieuwsbriefknop krijgt weer mijn cyan-stijl. */
 main section:nth-child(10) button {
     background: var(--color-cyan);
     color: white;
@@ -422,6 +632,407 @@ main section:nth-child(10) button {
     border-radius: var(--radius);
     font-weight: 600;
 }
+
+
+
+/* 
+   MARK: BEGIN PAGINA 2 (PRODUCTPAGINA)
+   De <main> heeft hier id="pagina-2"
+  
+*/
+
+/* Dit is de basislayout voor mijn productpagina. 
+   Ik gebruik grid om ruimte tussen de sections te houden. */
+#pagina-2 {
+    display: grid;
+    gap: var(--space-xl);
+    padding: var(--space-m) var(--space-s);
+}
+
+/* 
+   
+   SECTION 1: PRODUCT GALLERY + BASISDETAILS
+   
+   In deze eerste section combineer ik:
+   - de grote productafbeelding
+   - de producttitel, prijs, reviews
+   - het formulier met maten
+   - de knoppen (wishlist en out of stock)
+
+   In de echte Jellycat-site zijn dit eigenlijk twee kolommen,
+   maar ik heb alles samengevoegd in één section om het overzichtelijk te houden.
+*/
+
+#pagina-2 section:first-child {
+    position: relative;                  /* nodig als ik later pijltjes/slider toevoeg */
+    display: grid;                       /* ik maak van deze section een grid-container */
+    grid-template-columns: 1fr 1fr;      /* twee kolommen, allebei even breed */
+    grid-template-rows: repeat(7, auto); /* meerdere rijen, hoogte volgt de inhoud */
+    justify-items: center;               /* centreert de items in hun gridvak */
+    background: var(--color-light-bg);   /* licht vlak achter de hele productkaart */
+    border-radius: var(--radius);        /* afgeronde hoeken zoals op homepage */
+    padding: var(--space-m);             /* binnenruimte rondom de content */
+}
+
+/* De productafbeelding staat in de eerste kolom en loopt visueel over alle rijen. */
+#pagina-2 section:first-child img {
+    background: white;                   /* wit vlak achter de foto */
+    grid-row: 1 / 8;                     /* van rij 1 t/m 7 (8 is exclusief) */
+    grid-column: 1 / 2;                  /* expliciet in kolom 1 */
+    height: fit-content;                 /* hoogte wordt bepaald door de afbeelding zelf */
+}
+
+/* 
+   Toekomstige pijltjes/slider-knoppen:
+   Deze stijl wil ik gebruiken als ik later een carousel toevoeg.
+   Voor nu gebruik ik ze nog niet actief.
+
+*/
+
+#pagina-2 section:first-child button { 
+    position: absolute;                  /* zodat ik ze los over de afbeelding kan plaatsen */
+    top: 50%;                            /* in het verticale midden */
+    transform: translateY(-50%);         /* precies centreren ten opzichte van het midden */
+    background: white;                   /* witte cirkel achter het pijltje */
+    border-radius: 50%;                  /* maakt de knop rond */
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: var(--font-xlarge);       /* groot en goed zichtbaar pijltje */
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1); /* subtiele schaduw */
+}
+
+/* Linkerpijltje – bijvoorbeeld voor ‘vorige’ afbeelding. */
+#pagina-2 section:first-child button:first-child { 
+    left: var(--space-s);
+}
+
+/* Rechterpijltje – bijvoorbeeld voor ‘volgende’ afbeelding. */
+#pagina-2 section:first-child button:last-child {
+    right: var(--space-s);
+}
+
+/* 
+   
+   SECTION 2: PRODUCT DETAILS BLOK
+  
+   In deze section zet ik:
+   - de producttitel
+   - de prijs
+   - de reviewregel
+   - het formulier voor maatkeuze
+   - de knoppen onder elkaar
+
+   Ik gebruik hier een simpel grid voor nette verticale spacing.
+*/
+
+#pagina-2 section:nth-child(2) {
+    display: grid;
+    gap: var(--space-s);                 /* ruimte tussen de tekstregels en elementen */
+}
+
+/* Producttitel maak ik groot, zodat hij de aandacht trekt. */
+#pagina-2 section:nth-child(2) h1 {
+    font-size: var(--font-xlarge);
+}
+
+/* De tweede paragraaf is de prijs, die maak ik groter en vet. */
+#pagina-2 section:nth-child(2) p:nth-child(2) {
+    font-size: var(--font-large);
+    font-weight: 600;
+}
+
+/* De derde paragraaf is de reviewregel – iets kleiner en grijzig. */
+#pagina-2 section:nth-child(2) p:nth-child(3) {
+    font-size: var(--font-small);
+    color: var(--color-gray);
+}
+
+/* Het formulier met maat-opties (radio-buttons + tekst) zet ik onder elkaar. */
+#pagina-2 section:nth-child(2) form {
+    display: grid;
+    gap: var(--space-xs);
+    padding: var(--space-s) 0;
+}
+
+/* 
+   De maat-opties zelf (labels) laat ik standaardbrowser-styling houden.
+   Als ik meer maten toevoeg, komen ze netjes onder elkaar.
+*/
+
+/* Eerste knop onder het formulier: bijvoorbeeld “❤️ Add to Wishlist”. */
+#pagina-2 section:nth-child(2) button:nth-of-type(1) {
+    padding: var(--space-s);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-weight: 600;
+}
+
+/* Tweede knop: “Out of stock” / disabled knop met lichtere uitstraling. */
+#pagina-2 section:nth-child(2) button:nth-of-type(2) {
+    padding: var(--space-s);
+    background: var(--color-light-bg);
+    border-radius: var(--radius);
+    font-weight: 600;
+    color: var(--color-gray);
+}
+
+/* 
+   
+   SECTION 3: PRODUCTVERHAAL / QUOTE-BLOK
+   
+   Dit blok gebruik ik om een soort quote / storytelling rond het product te maken.
+   Het lijkt op een groot citaatvlak (met aanhalingstekens boven en onder).
+*/
+
+#pagina-2 section:nth-child(3) {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-l) var(--space-m);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+/* De subtitel staat centraal boven de tekst. */
+#pagina-2 section:nth-child(3) h2 {
+    display: inline-block;
+    margin: 0 var(--space-s) var(--space-m);
+    font-size: var(--font-large);
+}
+
+/* De tekst zelf centreer ik en beperk ik in breedte voor betere leesbaarheid. */
+#pagina-2 section:nth-child(3) article {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+/* De eerste en laatste p gebruik ik als grote aanhalingstekens. */
+#pagina-2 section:nth-child(3) article p:first-child,
+#pagina-2 section:nth-child(3) article p:last-child {
+    font-size: 3rem;
+    line-height: 1;
+    opacity: 0.5;                        /* iets transparanter zodat de tekst ertussen opvalt */
+}
+
+/* 
+   
+   SECTION 4: COLLAPSIBLE SECTIONS (DETAILS, CARE, REVIEWS)
+   
+   Hier gebruik ik <details> en <summary> voor:
+   - PRODUCT DETAILS
+   - SAFETY & CARE
+   - DELIVERY INFORMATION
+   - RETURNS
+   - REVIEWS (met lijst)
+
+   De gebruiker kan elk blok open- en dichtklappen.
+*/
+
+#pagina-2 section:nth-child(4) {
+    display: grid;
+    gap: var(--space-s);                 /* ruimte tussen de verschillende details-blokken */
+}
+
+/* Elk <details>-element stijlen als een kaart met rand en padding. */
+#pagina-2 section:nth-child(4) details {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-s) var(--space-m);
+}
+
+/* De <summary> is de “header” van het blok: titel + plus/min-teken rechts. */
+#pagina-2 section:nth-child(4) summary {
+    font-weight: 600;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr auto;     /* tekst links, plus/min-teken rechts */
+    gap: var(--space-s);
+}
+
+/* Standaard toon ik een plus-teken als het blok dicht is. */
+#pagina-2 section:nth-child(4) summary::after {
+    content: '+';
+    font-size: var(--font-large);
+}
+
+/* Als het blok open is, vervang ik de plus door een minus-teken. */
+#pagina-2 section:nth-child(4) details[open] summary::after {
+    content: '−';
+}
+
+/* Inhoudstekst binnen het details-blok maak ik kleiner en neutraal grijs. */
+#pagina-2 section:nth-child(4) details p {
+    margin-top: var(--space-s);
+    color: var(--color-gray);
+    font-size: var(--font-small);
+}
+
+/* De review-lijst in het laatste details-blok zet ik onder elkaar met ruimte ertussen. */
+#pagina-2 section:nth-child(4) details ul {
+    display: grid;
+    gap: var(--space-m);
+    margin-top: var(--space-m);
+}
+
+/* Elk review-item scheid ik visueel met een top-border. */
+#pagina-2 section:nth-child(4) details li {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-m);
+}
+
+/* Titel van een review (bijv. "Cute!") */
+#pagina-2 section:nth-child(4) details h3 {
+    font-size: var(--font-base);
+    margin-bottom: var(--space-xs);
+}
+
+/* Extra paragraaf in een review (bijv. datum, tekst) maak ik kleiner en grijs. */
+#pagina-2 section:nth-child(4) details li > p {
+    font-size: var(--font-small);
+    color: var(--color-gray);
+    margin-top: var(--space-xs);
+}
+
+/* 
+   SECTION 5: MEET MY FRIENDS / TRENDING
+  
+   Moet nog gemaakt worden!!!!
+   Dit blok lijkt op een soort slider:
+   - twee titels (MEET MY FRIENDS en TRENDING)
+   - pijltjes-links en -rechts
+   - daaronder een grid van vier gerelateerde producten
+*/
+
+#pagina-2 section:nth-child(5) {
+    text-align: center;
+}
+
+/* De titels zet ik in één regel door ze inline-block te maken met marge. */
+#pagina-2 section:nth-child(5) h2 {
+    display: inline-block;
+    margin: 0 var(--space-m) var(--space-m);
+    font-size: var(--font-large);
+}
+
+/* De pijltjesknoppen staan links en rechts van de titels. */
+#pagina-2 section:nth-child(5) > button {
+    font-size: var(--font-xlarge);
+    padding: var(--space-s);
+    margin: 0 var(--space-xs);
+}
+
+/* De vriendjes/gerelateerde producten staan in een responsive grid. */
+#pagina-2 section:nth-child(5) ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: var(--space-m);
+    margin-top: var(--space-m);
+}
+
+/* De afbeeldingen maak ik vierkant en geef ik een lichte achtergrond. */
+#pagina-2 section:nth-child(5) img {
+    background: var(--color-light-bg);
+    border-radius: var(--radius);
+    aspect-ratio: 1;
+    min-height: 12rem;
+}
+
+/* 
+   SECTION 6: FESTIVE FAVOURITES / PROMOBLOK
+   Dit blok is een soort grote banner:
+   - boven/links een afbeelding
+   - onder/rechts tekst en een knop
+*/
+
+#pagina-2 section:nth-child(6) {
+    display: grid;
+    gap: var(--space-m);
+    background: var(--color-light-bg);
+    border-radius: var(--radius);
+    overflow: hidden;                    /* voorkomt dat de inhoud buiten de afgeronde hoeken valt */
+}
+
+/* De afbeelding vult de breedte en heeft een minimumhoogte zodat hij altijd groot genoeg is. */
+#pagina-2 section:nth-child(6) img {
+    width: 100%;
+    min-height: 15rem;
+    background: white;
+}
+
+/* Het tekstblok krijgt wat extra ruimte rondom. */
+#pagina-2 section:nth-child(6) article {
+    padding: var(--space-m);
+}
+
+/* De titel van de promo maak ik groot. */
+#pagina-2 section:nth-child(6) h2 {
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--space-s);
+}
+
+/* De call-to-action-knop sluit aan bij de rest van mijn blauwe knoppen. */
+#pagina-2 section:nth-child(6) button {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-s) var(--space-l);
+    border-radius: var(--radius);
+    font-weight: 600;
+    margin-top: var(--space-m);
+}
+
+/* 
+   SECTION 7: NEWSLETTER OP PAGINA 2
+
+   Dit is een tweede nieuwsbriefblok, specifiek onderaan de productpagina.
+   De structuur lijkt op de homepage: titel, tekst en formulier.
+*/
+
+#pagina-2 section:nth-child(7) {
+    text-align: center;
+    padding: var(--space-l) var(--space-m);
+    background: var(--color-light-bg);
+    border-radius: var(--radius);
+}
+
+/* De titel maak ik groot en herkenbaar als heading. */
+#pagina-2 section:nth-child(7) h2 {
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--space-s);
+}
+
+/* De tekst centreer ik en beperk ik in breedte zodat hij goed leesbaar blijft. */
+#pagina-2 section:nth-child(7) p {
+    margin-bottom: var(--space-m);
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--font-small);
+}
+
+/* Het formulier zet ik als grid onder elkaar (input + knop). */
+#pagina-2 section:nth-child(7) form {
+    display: grid;
+    gap: var(--space-s);
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+/* De e-mailinput volgt dezelfde stijl als op de homepage. */
+#pagina-2 section:nth-child(7) input {
+    padding: var(--space-s);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: var(--font-base);
+}
+
+/* De knop krijgt weer mijn standaard cyan-stijl. */
+#pagina-2 section:nth-child(7) button {
+    background: var(--color-cyan);
+    color: white;
+    padding: var(--space-s);
+    border-radius: var(--radius);
+    font-weight: 600;
+}
+
 
 /* FOOTER */
 footer {
@@ -433,25 +1044,30 @@ footer {
     grid-template-columns: 1fr;
 }
 
+/* De titels van de footer-kolommen style ik als subtitels. */
 footer h3 {
     font-size: var(--font-base);
     margin-bottom: var(--space-s);
     font-weight: 700;
 }
 
+/* De linklijsten in de footer heb ik als simpele grid onder elkaar. */
 footer nav ul {
     display: grid;
     gap: var(--space-xs);
 }
 
+
 footer nav a {
     font-size: var(--font-small);
 }
 
+/* Het formulier in de footer gebruik ik voor een extra nieuwsbrief-optie. */
 footer form {
     display: grid;
     gap: var(--space-xs);
 }
+
 
 footer input {
     padding: var(--space-s);
@@ -460,6 +1076,7 @@ footer input {
     font-size: var(--font-small);
 }
 
+/* De submitknop in de footer krijgt een omgekeerde kleur (witte achtergrond, blauwe tekst). */
 footer form button {
     background: white;
     color: var(--color-cyan);
@@ -468,30 +1085,30 @@ footer form button {
     font-weight: 600;
 }
 
-
+/* FOOTER op desktop-breedte: hier maak ik vier kolommen naast elkaar. */
 @media (min-width: 60em) {
     footer {
         padding: var(--space-xl) var(--space-l);
         grid-template-columns: repeat(4, 1fr);
     }
-    
+
     footer form {
         grid-column: 1 / -1;
         max-width: 30rem;
     }
 
-    /* CONNECT WITH JELLYCAT (eerste p na het form) */
+    /* De tekst "CONNECT WITH JELLYCAT" laat ik over de volle breedte lopen. */
     footer p:nth-of-type(1) {
         grid-column: 1 / -1;
         margin-top: var(--space-m);
     }
 
-    /* social icons ul */
+     /* De social icon-lijst krijgt ook de volle breedte. */
     footer ul:nth-of-type(1) {
         grid-column: 1 / -1;
     }
 
-    /* laatste twee p’s onderaan */
+  /* De laatste twee regels onderaan de footer laat ik ook over alle kolommen lopen. */
     footer p:nth-of-type(2),
     footer p:nth-of-type(3) {
         grid-column: 1 / -1;
@@ -499,94 +1116,103 @@ footer form button {
 }
 
 
-/* RESPONSIVE - DESKTOP */
+/* ALGEMENE RESPONSIVE AANPASSINGEN VOOR DESKTOP */
 @media (min-width: 60em) {
+
     /* HEADER */
+     /* Op desktop maak ik van de header een grid met logo, nav en iconen in drie kolommen. */
     header {
-        grid-template-columns: auto 1fr auto;
-        padding: var(--space-s) var(--space-m);
+        grid-template-columns: auto 1fr auto; /* Hiervoor heb ik grid nodig. */
+        padding: var(--space-s) var(--space-m); /* Kolom 1: logo, kolom 2: nav, kolom 3: iconen. */
     }
-    
+
+    /* Het logo zet ik expliciet naar links. */
     header a {
         order: -1;
     }
-    
+
     header a img {
         width: 10rem;
         margin: 0;
     }
-    
+
+     /* Op desktop laat ik de hoofdnav zien. */
     header nav {
         display: block;
     }
-    
+
     header nav ul {
         display: grid;
         grid-auto-flow: column;
         gap: var(--space-m);
         font-size: var(--font-small);
     }
-    
-    header  ul {
+ /* Het hamburger-menu verberg ik op desktop. */
+    header section ul li:last-of-type button {
+        display: none;
+    }
+
+    header ul {
         justify-items: center;
     }
-    
+
     /* MAIN */
+    /* Op desktop geef ik main en pagina-2 wat extra padding en grotere gaten tussen sections. */
     main {
         padding: var(--space-l) var(--space-m);
         gap: var(--space-xl);
     }
-    
-    /* HERO */
+
+/* Op desktop geef ik main en pagina-2 wat extra padding en grotere gaten tussen sections. */
     main section:first-child {
         grid-template-columns: 1fr 1fr;
         padding: var(--space-l);
         align-items: center;
     }
-    
-    /* PRODUCT GRIDS */
-    main section:nth-child(2) > ul {
+
+/* PRODUCT GRIDS op homepage: ik zet meerdere kolommen naast elkaar. */
+    main section:nth-child(2)>ul {
         grid-template-columns: repeat(5, 1fr);
     }
-    
-    main section:nth-child(3) > ul {
+
+    main section:nth-child(3)>ul {
         grid-template-columns: repeat(3, 1fr);
     }
-    
-    main section:nth-child(4) > ul {
+
+    main section:nth-child(4)>ul {
         grid-template-columns: repeat(5, 1fr);
     }
-    
-    main section:nth-child(6) > ul {
+
+    main section:nth-child(6)>ul {
         grid-template-columns: repeat(4, 1fr);
     }
-    
-    /* BORN IN LONDON */
+
+ /* BORN IN LONDON: hier zet ik tekst en beeld naast elkaar. */
     main section:nth-child(5) {
         grid-template-columns: 1fr 1fr;
         padding: var(--space-l);
         align-items: center;
     }
-    
-    /* INSTAGRAM */
-    main section:nth-child(8) > ul {
+
+   /* INSTAGRAM: op desktop toon ik zes kolommen naast elkaar. */
+    main section:nth-child(8)>ul {
         grid-template-columns: repeat(6, 1fr);
     }
-    
-    /* PROMO BANNER */
+
+ /* PROMO BANNER: hier komen de afbeelding en tekst naast elkaar. */
     main section:nth-child(9) {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
-    
+
     main section:nth-child(9) article {
         padding: var(--space-l);
     }
-    
-    /* NEWSLETTER */
+
+   /* NEWSLETTER-formulier: inputveld en button naast elkaar op desktop. */
     main section:nth-child(10) form {
         grid-template-columns: 1fr auto;
     }
 }
-    /* FOOTER */
-    
+
+/* FOOTER */
