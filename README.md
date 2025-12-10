@@ -356,8 +356,8 @@ Dit is mijn kennis en hoe ik het heb toegepast
   ### Je uitkomst - karakteristiek screenshots:
    Hieronder laat ik screenshots zien van onderdelen waar ik het meest trots op ben.  
   Vooral de grid-layouts, de productpagina en het responsive gedrag laten goed zien wat ik deze weken heb geleerd.
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="./readme-images/UitklappenTrots.png" width="375px" alt="uitomst opdracht 1">
+ <img src="./readme-images/UitklappenTrots.png.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
