@@ -259,8 +259,8 @@ bij
 Dit is mijn kennis en hoe ik het heb toegepast
 
 ### HTML-structuur
-- De pagina is opgebouwd met **semantische HTML5-tags** zoals `<header>`, `<nav>`, `<main>`, `<section>` en `<article>`, omdat dit zorgt voor een duidelijke en toegankelijke structuur.
-- Ik heb **geen classes of ID’s** gebruikt, zoals de opdracht voorschrijft. Alle styling gebeurt via elementselectoren en `nth-of-type()`.
+- De pagina is opgebouwd met **semantische HTML5-tags** zoals <header> , <nav>, <main>, <section> en <article>, omdat dit zorgt voor een duidelijke en toegankelijke structuur.
+- Ik heb **geen classes of ID’s** gebruikt, zoals de opdracht voorschrijft. Alle styling gebeurt via elementselectoren en nth-of-type().
 - Voor navigatie, producten, categorieën, Instagram en socialmedia-iconen gebruik ik **<ul>** en **<li>**. Dit maakt herhalende content overzichtelijk en logisch.
 - Elke sectie heeft een vaste volgorde: een **titel**, daarna **beschrijvende tekst**, gevolgd door **de inhoud**.
 
@@ -273,13 +273,13 @@ Dit is mijn kennis en hoe ik het heb toegepast
 - Er is **één breakpoint op 60em (960px)** om over te schakelen naar de desktoplayout.
 - Op desktop:
   - De header wordt een **3-koloms grid** en het volledige menu wordt zichtbaar.
-  - De hero, Born in London-sectie en de promotiebanner veranderen in **twee kolommen**.
+  - De eerste setion (hero), Born in London-sectie en de promotiebanner veranderen in **twee kolommen**.
   - Productoverzichten bestaan uit **meerdere kolommen (3–5)**.
   - De footer wordt een **4-koloms layout**.
   - Het nieuwsbrief-formulier wordt naast elkaar geplaatst.
 
 ### Technische keuzes
-- Ik maak gebruik van **`nth-of-type()`** en **`nth-child()`** om onderdelen te selecteren zonder classes.
+- Ik maak gebruik van **nth-of-type()** en **nth-child()** om onderdelen te selecteren zonder classes.
 - Afbeeldingen hebben **beschrijvende alt-teksten** voor toegankelijkheid.
 - De kleuren zijn afgestemd op de Jellycat-stijl van de referentie.
 - Ik gebruik **rem**-eenheden zodat de tekst en layout meeschalen met de instellingen van de gebruiker.
@@ -371,8 +371,8 @@ Dit is mijn kennis en hoe ik het heb toegepast
   - Ik heb geleerd om **variabelen in :root** te gebruiken voor consistentie.  
   - Ik ben zekerder geworden in het ontleden van een layout en deze precies namaken.
 
-  <img src="./readme-images/GeenGrid.png" width="375px" alt="top">
-  <img src="./readme-images/Uitklappen.png" width="375px" alt="top">
+  <img src="./readme-images/GeenGrid.png" width="375px" alt="Grid is weg">
+  <img src="./readme-images/Uitklappen.png" width="375px" alt="">
 
 
 
@@ -390,8 +390,8 @@ Dit is mijn kennis en hoe ik het heb toegepast
   - Sommige stukken HTML had ik achteraf graag anders gestructureerd, maar dat kwam ik pas later achter.
   - er had meer in Flex kunnen staan ipv Grid
 
-  <img src="readme-images/BuitenBeeld.png" width="375px" alt="bummer">
-  <img src="readme-images/GeenGridOpMain.png.png" width="375px" alt="bummer">
+  <img src="readme-images/BuitenBeeld.png" width="375px" alt="gaat niet mee met responsive">
+  <img src="readme-images/GeenGridOpMain.png.png" width="375px" alt="Geen grid op main">
 </details>
 
 
@@ -414,12 +414,17 @@ Dit is mijn kennis en hoe ik het heb toegepast
   5. **valideren sistematisch gemaakt**  what-is-the-difference-between-inline-flex-and-inline-block-in-css/
   https://validator.w3.org/ (vanaf week 3)
   6. **CSS w3schools** om heel veel css tags op te zoeken  https://www.w3schools.com/html/default.asp
-  7. **CSS w3schools** Om html codes op te zoeken  
-  8. **studentbegeleiders Maja en David** Voor alle vragen als de code niet werkte en uitleg over margin, paddig, grid, flex, en de breakdownsheats (tijdens voorgangs gesprek) voor een duidelijk steructuur om an de website te beginnen  
-  9. **Docent Vasilis van Gemert** Voor vragen of mijn code voldoet aan de voorwaarden en voor vragen bij het vast lopen of foutmeldingen in de code. 
-  10. **youtube** uileg hoe je een nieuwe pagina maakt en linkt https://www.youtube.com/watch?v=vzZ7TXGIQ3Y
+  7. **mmdm** specefiek voor de label die ik miste bij de input https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/form
+  8. **Mmdm** voor duidelijke elementen uitleg https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements 
+  9. **studentbegeleiders Maja en David** Voor alle vragen als de code niet werkte en uitleg over margin, paddig, grid, flex, en de breakdownsheats (tijdens voorgangs gesprek) voor een duidelijk steructuur om an de website te beginnen  
+  10. **Docent Vasilis van Gemert** Voor vragen of mijn code voldoet aan de voorwaarden en voor vragen bij het vast lopen of foutmeldingen in de code. 
+  11. **youtube** uileg hoe je een nieuwe pagina maakt en linkt https://www.youtube.com/watch?v=vzZ7TXGIQ3Y
      uitleg over flex overzicht https://www.youtube.com/shorts/tpBzHfq_Z2o 
-  11. **Ronald en Ali** hebben geholpen met uitleg javascript omdat ik de les had gemist, uitleg hoe je van 2 css naar 1 ging en met foutmeldingen die ik over het hoofd zag
+  12. **Ronald en Ali** hebben geholpen met uitleg javascript omdat ik de les had gemist, uitleg hoe je van 2 css naar 1 ging en met foutmeldingen die ik over het hoofd zag en grote fouten gezien die ik zelf nooit had geweten.
+  13. **Claude** om te vragen hoe de spel fouten opgelost moesten worden zoals colloum moest columns en dan werkte het niet. claude.ai
+  14. en niet te vergeten het **HTML en CSS - websites ontwerpen en bouwen van Jon Duckett** die ik al sinds dag een elke dag gebruik om zowel html als css op te zoeken.
+  15. **DLO** voor de oefenopdrachten waar ik ook veel informatie uit heb gehaald
+
      
 
 
